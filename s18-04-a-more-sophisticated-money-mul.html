@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>A More Sophisticated Money Multiplier for M1</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s18-03-a-simple-model-of-multiple-dep.html"><img src="shared/images/batch-left.png"></a> <a href="s18-03-a-simple-model-of-multiple-dep.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s18-05-the-m2-money-multiplier.html">Next Section</a> <a href="s18-05-the-m2-money-multiplier.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section moved" id="wright-ch15_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">15.4</span> A More Sophisticated Money Multiplier for M1</h2>
+    <div class="learning_objectives editable block" id="wright-ch15_s01_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="wright-ch15_s01_l01">
+            <li>How do the simple money multiplier and the more sophisticated one developed here contrast and compare?</li>
+            <li>What equation helps us to understand how changes in the monetary base affect the money supply?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright-ch15_s01_p01">To review, an increase (decrease) in the monetary base (MB, which = C + R) leads to an even greater increase (decrease) in the money supply (MS, such as <span class="margin_term"><a class="glossterm">M1</a><span class="glossdef">M1 is a measure of the money supply that includes currency in circulation plus checkable deposits.</span></span> or <span class="margin_term"><a class="glossterm">M2</a><span class="glossdef">M2 is a measure of the money supply that includes M1 plus time deposits and noninstitutional (retail) money market funds.</span></span>) due to the multiple deposit creation process. In the previous section, you also learned a simple but unrealistic upper-bound formula for estimating the change that assumed that banks hold no excess reserves and that the public holds no currency.</p>
+    <div class="callout editable block" id="wright-ch15_s01_n02">
+        <h3 class="title">Stop and Think Box</h3>
+        <p class="para" id="wright-ch15_s01_p02">You are a research associate for Moody’s subsidiary, High Frequency Economics, in West Chester, Pennsylvania. A client wants you to project changes in M1 given likely increases in the monetary base. Because of a glitch in the Federal Reserve’s computer systems, currency, deposit, and excess reserve figures will not be available for at least one week. A private firm, however, can provide you with good estimates of changes in banking system reserves, and of course the required reserve ratio is well known. What equation can you use to help your client? What are the equation’s assumptions and limitations?</p>
+        <p class="para" id="wright-ch15_s01_p03">You cannot use the more complex M1 money multiplier this week because of the Fed’s computer glitch, so you should use the simple deposit multiplier from <a class="xref" href="wright-ch14#wright-ch14">Chapter 15 "The Money Supply Process and the Money Multipliers"</a>: ΔD = (1/rr) × ΔR. The equation provides an upper-bound estimate for changes in deposits. It assumes that the public will hold no more currency and that banks will hold no increased excess reserves.</p>
+    </div>
+    <p class="para editable block" id="wright-ch15_s01_p04">To get a more realistic estimate, we’ll have to do a little more work. <em class="emphasis">We start with the observation that we can consider the money supply to be a function of the monetary base times some money multiplier (m)</em>:</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch15_s01_m001" display="block">
+					<mrow>
+						<mo>△</mo>
+						<mi>M</mi>
+						<mi>S</mi>
+						<mo>=</mo>
+						<mi>m</mi>
+						<mo>×</mo>
+						<mo>△</mo>
+						<mi>M</mi>
+						<mi>B</mi>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch15_s01_p05">This is basically a broader version of the simple multiplier formula discussed in the previous section, except that instead of calculating the change in deposits (ΔD) brought about by the change in reserves (ΔR), we will now calculate the change in the money supply (ΔMS) brought about by the change in the monetary base (ΔMB). <em class="emphasis">Furthermore, instead of using the reciprocal of the required reserve ratio (1/rr) as the multiplier, we will use a more sophisticated one (m<sub class="subscript">1</sub>, and later m<sub class="subscript">2</sub>) that doesn’t assume away cash and excess reserves</em>.</p>
+    <p class="para editable block" id="wright-ch15_s01_p16"><em class="emphasis">We can add currency and excess reserves to the equation by algebraically describing their relationship to</em> <span class="margin_term"><a class="glossterm">checkable deposits</a><span class="glossdef"> Deposits that can easily, cheaply, and quickly be drawn upon by check in order to make payments. Also known as transaction deposits.</span></span> <em class="emphasis">in the form of a ratio</em>:</p>
+    <p class="para editable block" id="wright-ch15_s01_p17">
+				<em class="emphasis">C/D = currency ratio</em>
+			</p>
+    <p class="para editable block" id="wright-ch15_s01_p18">
+				<em class="emphasis">ER/D = excess reserves ratio</em>
+			</p>
+    <p class="para editable block" id="wright-ch15_s01_p19"><em class="emphasis">Recall that required reserves are equal to checkable deposits (D) times the required reserve ratio (rr). Total reserves equal required reserves plus excess reserves</em>:</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch15_s01_m002" display="block">
+					<mrow>
+						<mi>R</mi>
+						<mo>=</mo>
+						<mi>r</mi>
+						<mi>r</mi>
+						<mi>D</mi>
+						<mo>+</mo>
+						<mi>E</mi>
+						<mi>R</mi>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch15_s01_p06">So we can render MB = C + R as MB = C + rrD + ER. Note that we have successfully removed C and ER from the multiple deposit expansion process by separating them from rrD. After further algebraic manipulations of the above equation and the reciprocal of the reserve ratio (1/rr) concept embedded in the simple deposit multiplier, we’re left with a more sophisticated, more realistic money multiplier:</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch15_s01_m003" display="block">
+					<mrow>
+						<msub>
+							<mi>m</mi>
+							<mn>1</mn>
+						</msub>
+						<mo>=</mo>
+						<mn>1</mn>
+						<mo>+</mo>
+						<mo stretchy="false">(</mo>
+						<mi>C</mi>
+						<mo>/</mo>
+						<mi>D</mi>
+						<mo stretchy="false">)</mo>
+						<mo>/</mo>
+						<mo stretchy="false">[</mo>
+						<mi>r</mi>
+						<mi>r</mi>
+						<mo>+</mo>
+						<mo stretchy="false">(</mo>
+						<mi>E</mi>
+						<mi>R</mi>
+						<mo>/</mo>
+						<mi>D</mi>
+						<mo stretchy="false">)</mo>
+						<mo>+</mo>
+						<mo stretchy="false">(</mo>
+						<mi>C</mi>
+						<mo>/</mo>
+						<mi>D</mi>
+						<mo stretchy="false">)</mo>
+						<mo stretchy="false">]</mo>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch15_s01_p07">So if</p>
+    <p class="para editable block" id="wright-ch15_s01_p08">Required reserve ratio (rr) = .2</p>
+    <p class="para editable block" id="wright-ch15_s01_p09">Currency in circulation = $100 billion</p>
+    <p class="para editable block" id="wright-ch15_s01_p10">Deposits = $400 billion</p>
+    <p class="para editable block" id="wright-ch15_s01_p11">Excess reserves = $10 billion</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch15_s01_m004" display="block">
+					<mrow>
+						<msub>
+							<mi>m</mi>
+							<mn>1</mn>
+						</msub>
+						<mo>=</mo>
+						<mn>1</mn>
+						<mo>+</mo>
+						<mo stretchy="false">(</mo>
+						<mn>100</mn>
+						<mo>/</mo>
+						<mn>400</mn>
+						<mo stretchy="false">)</mo>
+						<mo>/</mo>
+						<mo stretchy="false">(</mo>
+						<mn>.2</mn>
+						<mtext> </mtext>
+						<mo>+</mo>
+						<mtext> </mtext>
+						<mo stretchy="false">(</mo>
+						<mn>10</mn>
+						<mo>/</mo>
+						<mn>400</mn>
+						<mo stretchy="false">)</mo>
+						<mo>+</mo>
+						<mo stretchy="false">(</mo>
+						<mn>100</mn>
+						<mo>/</mo>
+						<mn>400</mn>
+						<mo stretchy="false">)</mo>
+						<mo stretchy="false">)</mo>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch15_s01_m005" display="block">
+					<mrow>
+						<msub>
+							<mi>m</mi>
+							<mn>1</mn>
+						</msub>
+						<mo>=</mo>
+						<mn>1.25</mn>
+						<mo>/</mo>
+						<mo stretchy="false">(</mo>
+						<mn>.2</mn>
+						<mo>+</mo>
+						<mn>.025</mn>
+						<mo>+</mo>
+						<mn>.25</mn>
+						<mo stretchy="false">)</mo>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch15_s01_m006" display="block">
+					<mrow>
+						<msub>
+							<mi>m</mi>
+							<mn>1</mn>
+						</msub>
+						<mo>=</mo>
+						<mn>1.25</mn>
+						<mo>/</mo>
+						<mn>.475</mn>
+						<mo>=</mo>
+						<mn>2.6316</mn>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch15_s01_p12">Practice calculating the money multiplier in Exercise 1.</p>
+    <div class="exercises block" id="wright-ch15_s01_n03">
+        <h3 class="title">Exercises</h3>
+        <ol class="orderedlist" id="wright-ch15_s01_l02">
+            <li>
+                <p class="para">Given the following, calculate the M1 money multiplier using the formula m<sub class="subscript">1</sub> = 1 + (C/D)/[rr + (ER/D) + (C/D)].</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Currency</th>
+                                <th>Deposits</th>
+                                <th>Excess Reserves</th>
+                                <th>Required Reserve Ratio</th>
+                                <th>Answer: m<sub class="subscript">1</sub>
+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>10</td>
+                                <td>.1</td>
+                                <td>1.67</td>
+                            </tr>
+                            <tr>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>10</td>
+                                <td>.2</td>
+                                <td>1.54</td>
+                            </tr>
+                            <tr>
+                                <td>100</td>
+                                <td>1,000</td>
+                                <td>10</td>
+                                <td>.2</td>
+                                <td>3.55</td>
+                            </tr>
+                            <tr>
+                                <td>1,000</td>
+                                <td>100</td>
+                                <td>10</td>
+                                <td>.2</td>
+                                <td>1.07</td>
+                            </tr>
+                            <tr>
+                                <td>1,000</td>
+                                <td>100</td>
+                                <td>50</td>
+                                <td>.2</td>
+                                <td>1.02</td>
+                            </tr>
+                            <tr>
+                                <td>100</td>
+                                <td>1,000</td>
+                                <td>50</td>
+                                <td>.2</td>
+                                <td>3.14</td>
+                            </tr>
+                            <tr>
+                                <td>100</td>
+                                <td>1,000</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="wright-ch15_s01_p13">Once you have m, plug it into the formula <em class="emphasis">ΔMS = m × ΔMB</em>. So if m<sub class="subscript">1</sub> = 2.6316 and the monetary base increases by $100,000, the money supply will increase by $263,160. If m<sub class="subscript">1</sub> = 4.5 and MB decreases by $1 million, the money supply will decrease by $4.5 million, and so forth. Practice this in Exercise 2.</p>
+            </li>
+            <li>
+                <p class="para">Calculate the change in the money supply given the following:</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Change in MB</th>
+                                <th>m<sub class="subscript">1</sub>
+</th>
+                                <th>Answer: Change in MS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>100</td>
+                                <td>2</td>
+                                <td>200</td>
+                            </tr>
+                            <tr>
+                                <td>100</td>
+                                <td>4</td>
+                                <td>400</td>
+                            </tr>
+                            <tr>
+                                <td>−100</td>
+                                <td>2</td>
+                                <td>−200</td>
+                            </tr>
+                            <tr>
+                                <td>−100</td>
+                                <td>4</td>
+                                <td>−400</td>
+                            </tr>
+                            <tr>
+                                <td>1,000</td>
+                                <td>2</td>
+                                <td>2,000</td>
+                            </tr>
+                            <tr>
+                                <td>−1,000</td>
+                                <td>2</td>
+                                <td>−2,000</td>
+                            </tr>
+                            <tr>
+                                <td>10,000</td>
+                                <td>1</td>
+                                <td>10,000</td>
+                            </tr>
+                            <tr>
+                                <td>−10,000</td>
+                                <td>1</td>
+                                <td>−10,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <p class="para block"></p>
+    <div class="callout block" id="wright-ch15_s01_n04">
+        <h3 class="title">Stop and Think Box</h3>
+        <p class="para" id="wright-ch15_s01_p14">Explain <a class="xref" href="#wright-ch15_s01_f01">Figure 15.2 "U.S. MB and M1, 1959–2010"</a>, <a class="xref" href="#wright-ch15_s01_f02">Figure 15.3 "U.S. m"</a>, and <a class="xref" href="#wright-ch15_s01_f03">Figure 15.4 "U.S. currency and checkable deposits, 1959–2010"</a>.</p>
+        <div class="figure large" id="wright-ch15_s01_f01">
+            <p class="title"><span class="title-prefix">Figure 15.2</span> U.S. MB and M1, 1959–2010</p>
+            <img src="section_18/e5938ce4a93fe53e7d88774b2bc40326.jpg">
+        </div>
+        <div class="figure large" id="wright-ch15_s01_f02">
+            <p class="title"><span class="title-prefix">Figure 15.3</span> U.S. m<sub class="subscript">1</sub>, 1959–2010.</p>
+            <img src="section_18/726816e72ca6cb3aa7e3acacda944ac5.jpg">
+        </div>
+        <div class="figure large" id="wright-ch15_s01_f03">
+            <p class="title"><span class="title-prefix">Figure 15.4</span> U.S. currency and checkable deposits, 1959–2010</p>
+            <img src="section_18/842dbd276c08ebe38c2d7439eb283010.jpg">
+        </div>
+        <div class="figure large" id="wright-ch15_s01_f04">
+            <p class="title"><span class="title-prefix">Figure 15.5</span> U.S. currency ratio, 1959–2010</p>
+            <img src="section_18/7e982287d26550382e02ecee7b565e90.jpg">
+        </div>
+        <p class="para" id="wright-ch15_s01_p15">In <a class="xref" href="#wright-ch15_s01_f01">Figure 15.2 "U.S. MB and M1, 1959–2010"</a>, M1 has increased because MB has increased, likely due to net open market purchases by the Fed. Apparently, m<sub class="subscript">1</sub> has changed rather markedly since the early 1990s. In <a class="xref" href="#wright-ch15_s01_f02">Figure 15.3 "U.S. m"</a>, the M1 money multiplier m<sub class="subscript">1</sub> has indeed dropped considerably since about 1995. That could be caused by an increase in rr, C/D, or ER/D. <a class="xref" href="#wright-ch15_s01_f03">Figure 15.4 "U.S. currency and checkable deposits, 1959–2010"</a> shows that m decreased primarily because C/D increased. It also shows that the increase in C/D was due largely to the stagnation in D coupled with the continued growth of C. The stagnation in D is likely due to the advent of sweep accounts. <a class="xref" href="#wright-ch15_s01_f04">Figure 15.5 "U.S. currency ratio, 1959–2010"</a> isolates C/D for closer study.</p>
+    </div>
+    <div class="key_takeaways editable block" id="wright-ch15_s01_n05">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="wright-ch15_s01_l03">
+            <li>The more sophisticated money multipliers are similar to the simple deposit multiplier in that they equate changes in the money supply to changes in the monetary base times some multiplier.</li>
+            <li>The money multipliers differ because the simple multiplier is merely the reciprocal of the required reserve ratio, while the other multipliers account for cash and excess reserve leakages.</li>
+            <li>Therefore, m<sub class="subscript">1</sub> and m<sub class="subscript">2</sub> are always smaller than 1/rr (except in the rare case where C and ER both = 0).</li>
+            <li>ΔMS = m × ΔMB, where ΔMS = change in the money supply; m = the money multiplier; ΔMB = change in the monetary base. A positive sign means an increase in the MS; a negative sign means a decrease.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s18-03-a-simple-model-of-multiple-dep.html"><img src="shared/images/batch-left.png"></a> <a href="s18-03-a-simple-model-of-multiple-dep.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s18-05-the-m2-money-multiplier.html">Next Section</a> <a href="s18-05-the-m2-money-multiplier.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

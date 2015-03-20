@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>What’s the Yield on That?</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s07-04-pricing-debt-instruments.html"><img src="shared/images/batch-left.png"></a> <a href="s07-04-pricing-debt-instruments.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s07-06-calculating-returns.html">Next Section</a> <a href="s07-06-calculating-returns.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="wright-ch04_s05" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.5</span> What’s the Yield on That?</h2>
+    <div class="learning_objectives editable block" id="wright-ch04_s05_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="wright-ch04_s05_l01">
+            <li>What is yield to maturity and for what types of financial instruments is the yield to maturity relatively easy to calculate?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright-ch04_s05_p01">Thus far, we have assumed or been given a market interest rate and then calculated the price (PV) of the instrument. Or, given the PV and an interest rate, we’ve calculated the FV. <em class="emphasis">Sometimes it is useful to do the opposite, to calculate the interest rate, or yield to maturity, if given the PV and FV</em>. Say that you know that someone paid $750 for a zero coupon bond with a face value of $1,000 that will mature in exactly a year and you want to know what interest rate he or she paid. You know that PV = FV/(1 + i). Solving for i:</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m001" display="block">
+					<mrow>
+						<mtext>Multiply each side of the equation by </mtext>
+						<mo stretchy="false">(</mo>
+						<mn>1</mn>
+						<mo>+</mo>
+						<mi>i</mi>
+						<mo stretchy="false">)</mo>
+						<mo>:</mo>
+						<mo stretchy="false">(</mo>
+						<mn>1</mn>
+						<mo>+</mo>
+						<mi>i</mi>
+						<mo stretchy="false">)</mo>
+						<mo>×</mo>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>=</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m002" display="block">
+					<mrow>
+						<mtext>Multiply the terms on the left side of the equation: </mtext>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>+</mo>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mi>i</mi>
+						<mo>=</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m003" display="block">
+					<mrow>
+						<mtext>Subtract PV from each side of the equation: </mtext>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mi>i</mi>
+						<mo>=</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+						<mo>-</mo>
+						<mi>P</mi>
+						<mi>V</mi>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m004" display="block">
+					<mrow>
+						<mtext>Divide each side of the equation by </mtext>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>:</mo>
+						<mi>i</mi>
+						<mo>=</mo>
+						<mo stretchy="false">(</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+						<mo>-</mo>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo stretchy="false">)</mo>
+						<mo>/</mo>
+						<mi>P</mi>
+						<mi>V</mi>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m005" display="block">
+					<mrow>
+						<mtext>So in this case </mtext>
+						<mi>i</mi>
+						<mo>=</mo>
+						<mo stretchy="false">(</mo>
+						<mn>1000</mn>
+						<mo>-</mo>
+						<mn>750</mn>
+						<mo stretchy="false">)</mo>
+						<mo>/</mo>
+						<mn>750</mn>
+						<mo>=</mo>
+						<mn>250</mn>
+						<mo>/</mo>
+						<mn>750</mn>
+						<mo>=</mo>
+						<mn>.3333</mn>
+						<mo>,</mo>
+						<mtext> or </mtext>
+						<mn>33.33</mn>
+						<mtext> percent</mtext>
+						<mtext>.</mtext>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s05_p02">You can check your work by reversing the problem—that is, asking how much you’d pay today for $1,000 in a year if interest was at 33.33 percent: PV = 1000/(1.3333333) = $750. Voilà!</p>
+    <div class="callout editable block" id="wright-ch04_s05_n02">
+        <h3 class="title">Stop and Think Box</h3>
+        <p class="para" id="wright-ch04_s05_p03">Suppose you have $1,000 to invest for a year and two ways of investing it (each equal in terms of risk and liquidity): a discount bond due in one year with a face value of $1,000 for $912 or a bank account at 6.35 percent compounded annually. Which should you take?</p>
+        <p class="para" id="wright-ch04_s05_p04">Choose the bond, which will yield 9.65 percent: (1000 − 912)/912 = .0965. To maximize your haul, invest the $88 left over from the purchase of the bond in the bank account.</p>
+    </div>
+    <p class="para editable block" id="wright-ch04_s05_p05"><em class="emphasis">Calculating the yield to maturity for a perpetual debt, one with no maturity or repayment date, like a</em> <span class="margin_term"><a class="glossterm">Consol</a><span class="glossdef">A type of perpetual bond issued by the British government.</span></span>, <em class="emphasis">ground rent, or perpetual interest-only mortgage, is also quite easy</em>. The price or PV of a perpetuity is equal to the yearly payment—the only FV available from an instrument that by definition will never repay its principal—divided by the going rate of interest:</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m006" display="block">
+					<mrow>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>=</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+						<mo>/</mo>
+						<mi>i</mi>
+						<mtext> (decimalized)</mtext>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s05_p06">So a $1,000 ground rent that pays $50 a year (a 5 percent coupon rate) would be worth $1,000 if interest rates were 5 percent, less if rates are higher, more if lower:</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m007" display="block">
+					<mrow>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>=</mo>
+						<mn>50</mn>
+						<mo>/</mo>
+						<mn>.05</mn>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>1,000</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m008" display="block">
+					<mrow>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>=</mo>
+						<mn>50</mn>
+						<mo>/</mo>
+						<mn>.10</mn>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m009" display="block">
+					<mrow>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>=</mo>
+						<mn>50</mn>
+						<mo>/</mo>
+						<mn>.01</mn>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>5,000</mn>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s05_p07">Calculating the yield to maturity of a perpetuity, if given the PV and FV, is easily done by taking the equation and solving for i:</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m010" display="block">
+					<mrow>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>=</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+						<mo>/</mo>
+						<mi>i</mi>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m011" display="block">
+					<mrow>
+						<mtext>Multiply each side by </mtext>
+						<mi>i</mi>
+						<mo>:</mo>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mi>i</mi>
+						<mo>=</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m012" display="block">
+					<mrow>
+						<mtext>Divided by </mtext>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>:</mo>
+						<mi>i</mi>
+						<mo>=</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+						<mo>/</mo>
+						<mi>P</mi>
+						<mi>V</mi>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s05_p08">So the yield to maturity of a ground rent that pays $60 per year and that currently sells for $600 would be 10 percent: <em class="emphasis">i</em> = 60/600 = .10 = 10%.</p>
+    <div class="callout editable block" id="wright-ch04_s05_n03">
+        <h3 class="title">Stop and Think Box</h3>
+        <p class="para" id="wright-ch04_s05_p09">A ground rent contract consummated in Philadelphia, Pennsylvania, in 1756 is still being paid today. Someone recently paid $455 for the $23.17 annual payment. What is the ground rent’s yield to maturity? If the interest rate rises to 10 percent, how much will the ground rent be worth? What if interest falls to 2 percent?</p>
+        <p class="para" id="wright-ch04_s05_p10"><em class="emphasis">i</em> = C/P so <em class="emphasis">i</em> = 23.17/455 = 0.05092 = 5.09%; PV = 23.17/.1 = $231.70; PV = 23.17/.02 = $1,158.50.</p>
+    </div>
+    <p class="para editable block" id="wright-ch04_s05_p11">Calculating yield to maturity for coupon bonds and fixed-payment loans, however, is mathematically nasty business without a computer or bond table. In the past, people used to estimate the yield to maturity on such instruments by pretending they were perpetuities or engaging in trial-and-error interpolation. In the first method, you use the easy perpetuity equation above (<em class="emphasis">i</em> = FV/PV) to get a quick estimate called the <span class="margin_term"><a class="glossterm">current yield</a><span class="glossdef">A quick (<em class="emphasis">i</em> = FV/PV) but flawed method for calculating interest rates of nonperpetual debt.</span></span>. <em class="emphasis">Unfortunately, current yield can be wide of the mark, especially for bonds with maturities less than twenty years and bonds whose prices are far from their par value</em>.<span class="footnote" id="fwk-wright-fn04_004">Current yield is simply the yield to maturity of a perpetuity, so the more like a perpetuity a bond is, the better the current yield will approximate its yield to maturity. The shorter the maturity of a bond, the less like a Consol it is, so the less accurate the current yield formula will be. Similarly, the current yield works better the closer a bond’s price is to par because yield to maturity equals the coupon rate when the bond is at par. As the price deviates further from par, the less well the current yield can approximate the yield to maturity.</span> In the second method, one backs into the yield to maturity by making successive guesses about <em class="emphasis">i</em> and plugging them into the PV formula. Not fun, but you’ll eventually get there. Most people today therefore use a financial calculator, spreadsheet, or Web-based utility rather than such erroneous (current yield) or laborious (interpolation) processes. You should be able to calculate the yield to maturity of one-year discount bonds or perpetuities by hand, or at worst with the aid of simple (nonfinancial) calculator. Here is a little practice.</p>
+    <div class="exercises editable block" id="wright-ch04_s05_n04">
+        <h3 class="title">Exercises</h3>
+        <ol class="orderedlist" id="wright-ch04_s05_l02">
+            <li>A $100 bond payable in a year sells for $97.56. What is the yield to maturity? </li>
+            <li>Sam promises to pay Joe $1,904 in a year if Joe gives him $1,498 today. What interest rate is Sam paying and what interest rate Joe is earning? </li>
+            <li>Every year, the U.S. government pays a certain Indian tribe $10,000 and, by terms of its treaty with that tribe, must do so forever. Mr. Trump offered to purchase the right to receive that stream for a one-time payment of $143,500. What yield to maturity did Trump offer the Indians? </li>
+            <li>What is the yield to maturity of a British Consol paying £400 per year that sold for £27,653? </li>
+        </ol>
+    </div>
+    <div class="key_takeaways editable block" id="wright-ch04_s05_n05">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="wright-ch04_s05_l03">
+            <li>Yield to maturity is the most economically accurate way of measuring nominal interest rates.</li>
+            <li>It is easily calculated for one-year discount bonds <em class="emphasis">i</em> = (FV–PV)/PV and perpetuities <em class="emphasis">i</em> = C/PV where C is the coupon or annual payment.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s07-04-pricing-debt-instruments.html"><img src="shared/images/batch-left.png"></a> <a href="s07-04-pricing-debt-instruments.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s07-06-calculating-returns.html">Next Section</a> <a href="s07-06-calculating-returns.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

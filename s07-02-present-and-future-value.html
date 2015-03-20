@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Present and Future Value</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s07-01-the-interest-of-interest.html"><img src="shared/images/batch-left.png"></a> <a href="s07-01-the-interest-of-interest.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s07-03-compounding-periods.html">Next Section</a> <a href="s07-03-compounding-periods.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="wright-ch04_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.2</span> Present and Future Value</h2>
+    <div class="learning_objectives editable block" id="wright-ch04_s02_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="wright-ch04_s02_l01">
+            <li>What are the formulas for present value and future value, and what types of questions do they help to answer?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright-ch04_s02_p01"><em class="emphasis">A moment’s reflection should convince you that money today is always</em><span class="footnote" id="wright-fnXX_066">Certain interest rates occasionally turn very slightly (−0.004%) negative. The phenomenon is so rare and minor that it need not detain us here.</span><em class="emphasis">worth more than money tomorrow</em>. If you don’t believe me, send me all of your money immediately. I’ll return every cent of it—scout’s honor—in exactly one year. I won’t hold my breath. You’d be foolish indeed to forgo food, clothes, housing, transportation, and entertainment for a year for no remuneration whatsoever. That’s why a dollar today is worth more than a dollar tomorrow. (Another reason that a dollar today is worth more than a dollar tomorrow is that, in modern economies based on fiat money, prices tend to rise every year. So $100 tomorrow will buy fewer goods and services than $100 today will. We will discuss the impact of <span class="margin_term"><a class="glossterm">inflation</a><span class="glossdef">A sustained increase in the price level or average prices.</span></span> on interest rates more at the end of this chapter. For now, we consider only <span class="margin_term"><a class="glossterm">nominal interest rates</a><span class="glossdef">The price of borrowing money as it is usually stated, unadjusted for inflation.</span></span>, not the <span class="margin_term"><a class="glossterm">real interest rate</a><span class="glossdef">The price of borrowing money adjusted for inflation.</span></span>.) But what if I told you that if you gave me $100 today, I’d give you $1,000 in a year? Most lenders would jump at that offer (provided they thought I would pay as promised and not default), but I wouldn’t offer it and neither would most borrowers. In fact, about $110 would be the most I’d be willing to give you in a year for $100 today. That’s an interest rate of 10 percent ($10/$100 = .1 or 10%), which, as comedian Adam Sandler might say, is “not too shabby.”<span class="footnote" id="wright-fnXX_067"><a class="link" href="http://www.tsrocks.com/a/adam_sandler_texts/the_chanukah_song.html">www.tsrocks.com/a/adam_sandler_texts/the_chanukah_song.html</a></span> If we let the loan ride, as they say, capitalizing the interest or, in other words, paying interest on the interest every year, called annually <span class="margin_term"><a class="glossterm">compounding</a><span class="glossdef">Earning interest on interest.</span></span> interest, your $100 investment would grow in value, as shown in <a class="xref" href="#wright-ch04_s02_f01">Figure 4.1 "The fate of $100 invested at 10%, compounded annually"</a>. (The <span class="margin_term"><a class="glossterm">compounding period </a><span class="glossdef">The amount of time that passes before interest begins to earn interest.</span></span> need not be a year, and it is even possible to compound interest continuously, but unless otherwise noted we will compound annually in this chapter.)</p>
+    <div class="figure large medium-height editable block" id="wright-ch04_s02_f01">
+        <p class="title"><span class="title-prefix">Figure 4.1</span> The fate of $100 invested at 10%, compounded annually</p>
+        <img src="section_07/f2fb3cfe3047f49a1de3aa141bb39d69.jpg">
+    </div>
+    <p class="para editable block" id="wright-ch04_s02_p02">The figures in the table are easily calculated by multiplying the previous year’s value by 1.10, 1 representing the principal value and .10 representing the interest rate <em class="emphasis">expressed as a decimal</em>. So $100 today (year = 0) is, at 10 percent interest compounded annually, worth $110 in a year (100 × 1.1), $121 after two years (110 × 1.1), $131.10 after three years (121 × 1.1), and so forth. The quick way to calculate this for any year is to use the following formula:</p>
+    <p class="para editable block" id="wright-ch04_s02_p03">FV = PV(1 + i)<sup class="superscript">n</sup></p>
+    <p class="para editable block" id="wright-ch04_s02_p17">where</p>
+    <p class="para editable block" id="wright-ch04_s02_p04">FV = the future value (the value of your investment in the future)</p>
+    <p class="para editable block" id="wright-ch04_s02_p05">PV = the present value (the amount of your investment today)</p>
+    <p class="para editable block" id="wright-ch04_s02_p06">(1 + i)<sup class="superscript">n</sup> = the future value factor (aka the present value factor or discount factor in the equation below)</p>
+    <p class="para editable block" id="wright-ch04_s02_p07"><em class="emphasis">i</em> = interest rate (decimalized, for example, 6% = .06; 25% = .25, 2.763% = .02763, etc.)</p>
+    <p class="para editable block" id="wright-ch04_s02_p08"><em class="emphasis">n</em> = number of terms (here, years; elsewhere days, months, quarters)</p>
+    <p class="para editable block" id="wright-ch04_s02_p09">For $100 borrowed today at 10 percent compounded annually, in 100 years I’d owe you $1,378,061 (FV = 100 × 1.1<sup class="superscript">100</sup>). (Good luck collecting that one!)</p>
+    <p class="para editable block" id="wright-ch04_s02_p10">What if someone offers to pay you, say, $1,000 in 5 years? How much would you be willing to pay today for that? Clearly, something less than $1,000. Instead of taking a PV and expanding it via multiplication to determine an FV, here you must do the opposite, or in other words, reduce or “discount” an FV to a PV. You do so by dividing, as in the following formula:</p>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s02_m001" display="block">
+					<mtable columnalign="left">
+						<mtr>
+							<mtd>
+								<mi>P</mi>
+								<mi>V</mi>
+								<mtext> </mtext>
+								<mo>=</mo>
+								<mtext> </mtext>
+								<mi>F</mi>
+								<mi>V</mi>
+								<mo>/</mo>
+								<mo stretchy="false">(</mo>
+								<mn>1</mn>
+								<mo>+</mo>
+								<mi>i</mi>
+								<msup>
+									<mo stretchy="false">)</mo>
+									<mi>n</mi>
+								</msup>
+							</mtd>
+						</mtr>
+						<mtr>
+							<mtd>
+								<mtext>or </mtext>
+								<mi>P</mi>
+								<mi>V</mi>
+								<mtext> </mtext>
+								<mo>=</mo>
+								<mtext> </mtext>
+								<mn>1000</mn>
+								<mo>/</mo>
+								<mo stretchy="false">(</mo>
+								<mn>1</mn>
+								<mo>+</mo>
+								<mi>i</mi>
+								<msup>
+									<mo stretchy="false">)</mo>
+									<mn>5</mn>
+								</msup>
+							</mtd>
+						</mtr>
+					</mtable>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s02_p11">Obviously, we can’t solve this equation unless one of the two remaining variables is given. If the interest rate is given as 5 percent, you would pay $783.53 today for $1,000 payable in 5 years (PV = 1000/1.05<sup class="superscript">5</sup>). If it is 20 percent, you’d give only $401.88 (PV = 1000/1.2<sup class="superscript">5</sup>). If it is 1 percent, you would give $951.47 (PV = 1000/1.01<sup class="superscript">5</sup>). <em class="emphasis">Notice that as the interest rate rises (falls), the present value (price) of the future payment falls (rises). In other words, the price (PV) of some future payment (some FV; generically, a bond) and the rate of interest are inversely related</em>. You can see this algebraically by noting that the <em class="emphasis">i</em> term is in the denominator, so as it gets larger, PV must get smaller (holding FV constant, of course). Economically this makes sense because a higher interest rate means a higher opportunity cost for money, so a sum payable in the future is worth less the more dear money is (the more it costs to borrow it).</p>
+    <p class="para editable block" id="wright-ch04_s02_p12">If payment of the bond described just above were to be made in ten years instead of five, at 1 percent interest per year, you’d pay $905.29 (PV = 1000/1.01<sup class="superscript">10</sup>). Note here that, holding the interest rate (and all other factors) constant, you give less today for a payment further in the future ($905.29 &lt; $951.47). That too makes good sense because you’re without your money longer and need to be compensated for it by paying a lower price for the bond/promise/IOU today.</p>
+    <div class="callout editable block" id="wright-ch04_s02_n02">
+        <h3 class="title">Stop and Think Box</h3>
+        <p class="para" id="wright-ch04_s02_p13">Congratulations, you just won the Powerball: $100 million payable in $5 million installments over 20 years! Did you really win $100 million? (<em class="emphasis">Hint</em>: Calculate the PV of the final payment with interest at 4 percent.)</p>
+        <p class="para" id="wright-ch04_s02_p14">No; 5 × 20 = 100, but the money payable next year and in subsequent years is not worth $5 million today if interest rates are above 0, and they almost always are. For example, the last payment, with interest rates at 4 percent compounded annually, has a PV of only 5,000,000/(1.04)<sup class="superscript">20</sup> = $2,281,934.73.</p>
+    </div>
+    <p class="para editable block" id="wright-ch04_s02_p15">This is a great place to stop and drill until calculating present value and future value becomes second nature to you. Work through the following problems until it hurts. Then do them again, standing on your head or on one leg.</p>
+    <div class="exercises editable block" id="wright-ch04_s02_n03">
+        <h3 class="title">Exercises</h3>
+        <p class="para" id="wright-ch04_s02_p16">For all questions in this set, interest compounds annually and there are no transaction fees, defaults, etc.</p>
+        <ol class="orderedlist" id="wright-ch04_s02_l02">
+            <li>On your seventieth birthday, you learn that your grandma, bless her soul, deposited $50.00 for you on the day of your birth in a savings account bearing 5 percent interest. How much is in the account? </li>
+            <li>You won $1 million in the lottery but unfortunately the money is payable in a year and you want to start spending it right away. If interest is at 8 percent, how much can you receive today in exchange for that $1 million in year? </li>
+            <li>As a college freshman, you hoped to save $2,500 to “pimp your ride” as a college graduation present to yourself. You put $2,012.98 from your high school graduation haul in the bank at 5 percent interest. Will you meet your goal? </li>
+            <li>You’ve won a scholarship for your senior year worth $1,500, but it is payable only after graduation, a year hence. If interest is at 15 percent, how much is your scholarship worth today? </li>
+            <li>You determine that you need $1,750,000 saved in order to retire comfortably. When you turn 25, you inherit $350,017. If you invest that sum immediately at 4.42 percent, can you retire at age 65 if you have no other savings? </li>
+            <li>You own two bonds, each with a face, or payoff, value of $1,000. One falls due in exactly one year and the other in exactly three years. If interest is at 2.35 percent, how much are those bonds worth today? What if interest rates jump to 12.25 percent? </li>
+            <li>To purchase a car, you borrowed $10,000 from your brother. You offered to pay him 8 percent interest and to repay the loan in exactly three years. How much will you owe your bro? </li>
+            <li>As part of a lawsuit settlement, a major corporation offers you $100,000 today or $75,000 next year. Which do you choose if interest rates are 5 percent? If they are 13.47886 percent? </li>
+            <li>Exactly 150 years ago, the U.S. government promised to pay a certain Indian tribe $3,500, or 7 percent interest until it did so. Somehow, the account was unpaid. How much does the government owe the tribe for this promise? </li>
+            <li>As part of an insurance settlement, you are offered $100,000 today or $125,000 in five years. If the applicable interest rate is 1 percent, which option do you choose? What if the interest rate is 5 percent? </li>
+        </ol>
+    </div>
+    <div class="key_takeaways editable block" id="wright-ch04_s02_n04">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="wright-ch04_s02_l03">
+            <li>The present value formula is PV = FV/(1 + i)<sup class="superscript">n</sup> where PV = present value, FV = future value, <em class="emphasis">i</em> = decimalized interest rate, and <em class="emphasis">n</em> = number of periods. It answers questions like, How much would you pay today for $X at time y in the future, given an interest rate and a compounding period?</li>
+            <li>The future value formula is FV = PV× (1 + i)<sup class="superscript">n</sup>. It answers questions like, How much will $X invested today at some interest rate and compounding period be worth at time Y?</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s07-01-the-interest-of-interest.html"><img src="shared/images/batch-left.png"></a> <a href="s07-01-the-interest-of-interest.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s07-03-compounding-periods.html">Next Section</a> <a href="s07-03-compounding-periods.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

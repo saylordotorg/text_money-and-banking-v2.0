@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Interest-Rate Risk</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s12-04-credit-risk.html"><img src="shared/images/batch-left.png"></a> <a href="s12-04-credit-risk.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s12-06-off-the-balance-sheet.html">Next Section</a> <a href="s12-06-off-the-balance-sheet.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="wright-ch09_s05" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">9.5</span> Interest-Rate Risk</h2>
+    <div class="learning_objectives editable block" id="wright-ch09_s05_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="wright-ch09_s05_l01">
+            <li>What is interest rate risk and how do bankers manage it?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright-ch09_s05_p01"><em class="emphasis">Financial intermediaries can also be brought low by changes in interest rates</em>. Consider the situation of Some Bank, which like most depository institutions borrows short and lends long:</p>
+    <div class="informaltable block" frame="all">
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Some Bank</th>
+                    <th>(Billions USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Assets</td>
+                    <td>Liabilities</td>
+                </tr>
+                <tr>
+                    <td>Interest-rate-sensitive assets like variable rate and short-term loans and short-term securities $10</td>
+                    <td>Interest-rate-sensitive liabilities like variable rate CDs and MMDAs $20</td>
+                </tr>
+                <tr>
+                    <td>Fixed-rate assets like reserves, long-term loans and securities $50</td>
+                    <td>Fixed-rate liabilities like checkable deposits, CDs, equity capital $40</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="wright-ch09_s05_p02">If interest rates increase, Some Bank’s gross profits, the difference between what it pays for its liabilities and earns on its assets, will decline (assuming the spread stays the same) because the value of its rate-sensitive liabilities (short-term and variable-rate time deposits) exceeds that of its rate-sensitive assets (short-term and variable- rate loans and securities). Say, for instance, it today pays 3 percent for its rate-sensitive liabilities and receives 7 percent on its rate-sensitive assets. That means it is paying 20 × .03 = $.6 billion to earn 10 × .07 = $.7 billion. (Not bad work if you can get it.) If interest rates increase 1 percent on each side of the balance sheet, Some Bank will be paying 20 × .04 = $.8 billion to earn 10 × .08 = $.8 billion. (No profits there.) If rates increase another 1 percent, it will have to pay 20 × .05 = $1 billion to earn 10 × .09 = $.9 billion, a total loss of $.2 billion (from a $.1 billion profit to a $.1 billion loss).</p>
+    <div class="callout editable block" id="wright-ch09_s05_n02">
+        <h3 class="title">Stop and Think Box</h3>
+        <p class="para" id="wright-ch09_s05_p03">Inflation was unexpectedly high in the 1970s. Given what you learned about the relationship between inflation and nominal interest rates (as inflation increases, so too must nominal interest rates, all else equal), and between interest rates and bank profitability in this chapter, what happened in the 1980s?</p>
+        <p class="para" id="wright-ch09_s05_p04">Bank profitability sank to the point that many banks, the infamous savings and loans (S&amp;Ls), went under. Inflation (via the Fisher Equation) caused nominal interest rates to increase, which hurt banks’ profitability because they were earning low rates on long-term assets (like thirty-year bonds) while having to pay high rates on their short-term liabilities. Mounting losses induced many bankers to take on added risks, including risks in the derivatives markets. A few restored their banks to profitability, but others destroyed all of their bank’s capital and then some.</p>
+    </div>
+    <p class="para editable block" id="wright-ch09_s05_p05"><em class="emphasis">Of course, if the value of its risk-sensitive assets exceeded that of its liabilities, the bank would profit from interest rate increases</em>. It would suffer, though, if interest rates decreased. Imagine Some Bank has $10 billion in interest rate-sensitive assets at 8 percent and only $1 billion in interest rate-sensitive liabilities at 5 percent. It is earning 10 × .08 = $.8 billion while paying 1 × .05 = $.05 billion. If interest rates decreased, it might earn only 10 × .05 = $.5 billion while paying 1 × .02 = $.02 billion; thus, ceteris paribus, its gross profits would decline from .8  − .05 = $.75 billion to .5  − .02 = $.48 billion, a loss of $.27 billion. More formally, this type of calculation, called basic gap analysis, is</p>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch09_s05_m001" display="block">
+					<mrow>
+						<mi>C</mi>
+						<mi>ρ</mi>
+						<mtext> </mtext>
+						<mo>=</mo>
+						<mtext> </mtext>
+						<mo stretchy="false">(</mo>
+						<msub>
+							<mi>A</mi>
+							<mi>r</mi>
+						</msub>
+						<mo>-</mo>
+						<msub>
+							<mi>L</mi>
+							<mi>r</mi>
+						</msub>
+						<mo stretchy="false">)</mo>
+						<mtext> </mtext>
+						<mo>×</mo>
+						<mtext> </mtext>
+						<mo>△</mo>
+						<mi>i</mi>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch09_s05_p06">where:</p>
+    <p class="para editable block" id="wright-ch09_s05_p07">C<sub class="subscript">ρ</sub> = changes in profitability</p>
+    <p class="para editable block" id="wright-ch09_s05_p08">A<sub class="subscript">r</sub> = risk-sensitive assets</p>
+    <p class="para editable block" id="wright-ch09_s05_p09">L<sub class="subscript">r</sub> = risk-sensitive liabilities</p>
+    <p class="para editable block" id="wright-ch09_s05_p10">Δ<em class="emphasis">i</em> = change in interest rates</p>
+    <p class="para editable block" id="wright-ch09_s05_p11">So, returning to our first example,</p>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch09_s05_m002" display="block">
+					<mrow>
+						<msub>
+							<mi>C</mi>
+							<mi>ρ</mi>
+						</msub>
+						<mo>=</mo>
+						<mo stretchy="false">(</mo>
+						<mn>10</mn>
+						<mo>-</mo>
+						<mn>20</mn>
+						<mo stretchy="false">)</mo>
+						<mtext> </mtext>
+						<mo>×</mo>
+						<mtext> </mtext>
+						<mn>.02</mn>
+						<mo>=</mo>
+						<mo>-</mo>
+						<mn>10</mn>
+						<mtext> </mtext>
+						<mo>×</mo>
+						<mtext> </mtext>
+						<mn>.02</mn>
+						<mo>=</mo>
+						<mo>-</mo>
+						<mi>$</mi>
+						<mn>.2</mn>
+						<mtext> billion</mtext>
+						<mtext>,</mtext>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch09_s05_p12">and the example above,</p>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch09_s05_m003" display="block">
+					<mrow>
+						<msub>
+							<mi>C</mi>
+							<mi>ρ</mi>
+						</msub>
+						<mo>=</mo>
+						<mo stretchy="false">(</mo>
+						<mn>10</mn>
+						<mo>-</mo>
+						<mn>1</mn>
+						<mo stretchy="false">)</mo>
+						<mtext> </mtext>
+						<mo>-</mo>
+						<mtext> </mtext>
+						<mo stretchy="false">(</mo>
+						<mo>-</mo>
+						<mn>.03</mn>
+						<mo stretchy="false">)</mo>
+						<mo>=</mo>
+						<mo>-</mo>
+						<mi>$</mi>
+						<mn>.27</mn>
+						<mtext> billion</mtext>
+						<mtext>.</mtext>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch09_s05_p13">Complete the exercise to get comfortable conducting basic gap analysis.</p>
+    <div class="exercises block" id="wright-ch09_s05_n03">
+        <h3 class="title">Exercise</h3>
+        <ol class="orderedlist" id="wright-ch09_s05_l03">
+            <li>
+                <p class="para">Use the basic gap analysis formula to estimate Some Bank’s loss or gain under the following scenarios.</p>
+                <span class="informalequation">
+					<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch09_s05_m004" display="block">
+						<mrow>
+							<msub>
+								<mi>C</mi>
+								<mi>?</mi>
+							</msub>
+							<mo>=</mo>
+							<mo stretchy="false">(</mo>
+							<msub>
+								<mi>A</mi>
+								<mi>r</mi>
+							</msub>
+							<mo>-</mo>
+							<msub>
+								<mi>L</mi>
+								<mi>r</mi>
+							</msub>
+							<mo stretchy="false">)</mo>
+							<mtext></mtext>
+							<mo>×</mo>
+							<mtext></mtext>
+							<mo>△</mo>
+							<mi>i</mi>
+						</mrow>
+					</math>
+</span>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Risk Sensitive Assets (Millions USD)</th>
+                                <th align="char">Risk Sensitive Liabilities (Millions USD)</th>
+                                <th>Change in Interest Rates (%)</th>
+                                <th>Answer: C<sub class="subscript">P</sub> (Millions USD)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>100</td>
+                                <td align="char">100</td>
+                                <td>100</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>100</td>
+                                <td align="char">200</td>
+                                <td>10</td>
+                                <td>−10</td>
+                            </tr>
+                            <tr>
+                                <td>100</td>
+                                <td align="char">200</td>
+                                <td>−10</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>199</td>
+                                <td align="char">200</td>
+                                <td>10</td>
+                                <td>−0.1</td>
+                            </tr>
+                            <tr>
+                                <td>199</td>
+                                <td align="char">200</td>
+                                <td>−10</td>
+                                <td>0.1</td>
+                            </tr>
+                            <tr>
+                                <td>200</td>
+                                <td align="char">100</td>
+                                <td>10</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>200</td>
+                                <td align="char">100</td>
+                                <td>−10</td>
+                                <td>−10</td>
+                            </tr>
+                            <tr>
+                                <td>200</td>
+                                <td align="char">199</td>
+                                <td>10</td>
+                                <td>0.1</td>
+                            </tr>
+                            <tr>
+                                <td>200</td>
+                                <td align="char">199</td>
+                                <td>−10</td>
+                                <td>−0.1</td>
+                            </tr>
+                            <tr>
+                                <td>1000</td>
+                                <td align="char">0</td>
+                                <td>1</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td align="char">1000</td>
+                                <td>1</td>
+                                <td>−10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright-ch09_s05_p15">Now, take a look at <a class="xref" href="#wright-ch09_s05_f01">Figure 9.3 "Basic gap analysis matrix"</a>, which summarizes, in a 2 × 2 matrix, what happens to bank profits when the gap is positive (A<sub class="subscript">r</sub> &gt; L<sub class="subscript">r</sub>) or negative (A<sub class="subscript">r</sub> &lt; L<sub class="subscript">r</sub>) when interest rates fall or rise. Basically, <em class="emphasis">bankers want to have more interest-sensitive assets than liabilities if they think that interest rates are likely to rise and they want to have more interest rate-sensitive liabilities than assets if they think that interest rates are likely to decline</em>.</p>
+    <div class="figure large editable block" id="wright-ch09_s05_f01">
+        <p class="title"><span class="title-prefix">Figure 9.3</span> Basic gap analysis matrix</p>
+        <img src="section_12/9d1f4d6a2a8c20e46fcf7c9de5e514e1.jpg">
+    </div>
+    <p class="para editable block" id="wright-ch09_s05_p16">Of course, not all rate-sensitive liabilities and assets have the same maturities, so to assess their interest rate risk exposure bankers usually engage in more sophisticated analyses like the maturity bucket approach, standardized gap analysis, or duration analysis. Duration, also known as Macaulay’s Duration, measures the average length of a security’s stream of payments.<span class="footnote" id="fwk-wright-fn09_004"><a class="link" href="http://www.riskglossary.com/link/duration_and_convexity.htm">www.riskglossary.com/link/duration_and_convexity.htm</a></span> In this context, <em class="emphasis">duration is used to estimate the sensitivity of a security’s or a portfolio’s market value to interest rate changes</em> <em class="emphasis">via this formula</em>:</p>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch09_s05_m005" display="block">
+					<mrow>
+						<mo>△</mo>
+						<mi>%</mi>
+						<mi>P</mi>
+						<mo>=</mo>
+						<mo>-</mo>
+						<mo>△</mo>
+						<mi>%</mi>
+						<mi>i</mi>
+						<mtext> </mtext>
+						<mo>×</mo>
+						<mtext> </mtext>
+						<mi>d</mi>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch09_s05_p17"><em class="emphasis">Δ%P</em> = percentage change in market value</p>
+    <p class="para editable block" id="wright-ch09_s05_p18"><em class="emphasis">Δi</em> = change in interest (<em class="emphasis">not</em> decimalized, i.e., represent 5% as 5, not .05. Also note the negative sign. The sign is negative because interest rates and prices are inversely related.)</p>
+    <p class="para editable block" id="wright-ch09_s05_p19"><em class="emphasis">d</em> = duration (years)</p>
+    <p class="para editable block" id="wright-ch09_s05_p20">So, if interest rates increase 2 percent and the average duration of a bank’s $100 million of assets is 3 years, the value of those assets will fall approximately  −2 × 3 =  −6%, or $6 million. If the value of that bank’s liabilities (excluding equity) is $95 million, and the duration is also 3 years, the value of the liabilities will also fall, 95 × .06 = $5.7 million, effectively reducing the bank’s equity (6  − 5.7= ) $.3 million. If the duration of the bank’s liabilities is only 1 year, then its liabilities will fall  −2 × 1 =  −2% or 95 × .02 = $1.9 million, and the bank will suffer an even larger loss (6  − 1.9 =) of $4.1 million. If, on the other hand, the duration of the bank’s liabilities is 10 years, its liabilities will decrease  −2 × 10 =  −20% or $19 million and the bank will profit from the interest rate rise.</p>
+    <p class="para editable block" id="wright-ch09_s05_p21">A basic interest rate risk reduction strategy when interest rates are expected to fall is to keep the duration of liabilities short and the duration of assets long. That way, the bank continues to earn the old, higher rate on its assets but benefits from the new lower rates on its deposits, CDs, and other liabilities. <em class="emphasis">As noted above, borrowing short and lending long is second nature for banks, which tend to thrive when interest rates go down</em>. When interest rates increase, banks would like to keep the duration of assets short and the duration of liabilities long. That way, the bank earns the new, higher rate on its assets and keeps its liabilities locked in at the older, lower rates. <em class="emphasis">But banks can only go so far in this direction because it runs against their nature</em>; few people want to borrow if the loans are callable and fewer still want long-term checkable deposits!</p>
+    <div class="key_takeaways editable block" id="wright-ch09_s05_n04">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="wright-ch09_s05_l02">
+            <li>Interest rate risk is the chance that interest rates may increase, decreasing the value of bank assets.</li>
+            <li>Bankers manage interest rate risk by performing analyses like basic gap analysis, which compares a bank’s interest rate risk-sensitive assets and liabilities, and duration analysis, which accounts for the fact that bank assets and liabilities have different maturities.</li>
+            <li>Such analyses, combined with interest rate predictions, tell bankers when to increase or decrease their rate-sensitive assets or liabilities, and whether to shorten or lengthen the duration of their assets or liabilities.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s12-04-credit-risk.html"><img src="shared/images/batch-left.png"></a> <a href="s12-04-credit-risk.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s12-06-off-the-balance-sheet.html">Next Section</a> <a href="s12-06-off-the-balance-sheet.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

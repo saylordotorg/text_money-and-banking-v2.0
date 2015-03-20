@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Options and Swaps</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s15-02-forwards-and-futures.html"><img src="shared/images/batch-left.png"></a> <a href="s15-02-forwards-and-futures.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s15-04-suggested-reading.html">Next Section</a> <a href="s15-04-suggested-reading.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="wright_1.1-5066-20111012-151523-187828">
+    <h2 class="title editable block">
+<span class="title-prefix">12.3</span> Options and Swaps</h2>
+    <div class="learning_objectives editable block" id="wright_1.1-5066-20111012-151650-312280">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist">
+            <li>What are options and how can they be used to hedge and speculate?</li>
+            <li>What are swaps and how are they used to hedge and speculate?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright_1.1-5066-20111012-152421-400675">Options are aptly named financial derivatives that give their holders the option (which is to say the right, but not the obligation) to purchase (call) or sell (put) an underlying asset at a predetermined strike price, on (if a so-called European option) or before (if a so-called American option) a predetermined expiration date. Options are most often written on stocks (equities) but can be linked to other types of assets as well. To induce investors to issue an option and thereby obligate themselves to make a disadvantageous trade, option holders must pay a premium to the option issuer based on the option type, strike price, expiration date, interest rates, and volatility of the underlying asset. (The most famous option valuation model is called Black-Scholes.<span class="footnote" id="wright_1.1-ch99_fn98"><a class="link" href="http://en.wikipedia.org/wiki/Black%E2%80%93Scholes">en.wikipedia.org/wiki/Black–Scholes</a></span> It is rather complicated, but various online calculators will painlessly compute the option premium for users who input the values of the key variables.<span class="footnote" id="wright_1.1-ch99_fn99"><a class="link" href="http://www.money-zine.com/Calculators/Investment-Calculators/Black-Scholes-Calculator">www.money-zine.com/Calculators/Investment-Calculators/Black-Scholes-Calculator</a></span>)</p>
+    <p class="para editable block" id="wright_1.1-5066-20111012-152114-989557">Options can be used to hedge or speculate in various ways. An investor might buy a call option on a stock in the hopes that the stock price will rise above the strike price, allowing her to buy the stock at the strike price (e.g., $90) and immediately resell it at the higher market price (e.g., $100). Or an investor might buy a put option to minimize his losses. If the stock fell from $100 to $50 per share, for example, a put option at $75 would be profitable or “in the money” because the investor could buy the stock in the market at $50 and then exercise his option to sell the stock to the option issuer at $75 for a gross profit of $25 per share.</p>
+    <p class="para editable block" id="wright_1.1-5066-20111012-152114-989636">Buying and selling calls and puts can be combined to create a variety of investment strategies with colorful names like bear put spreads and bull collars. Do yourself a favor and study the subject more thoroughly before dabbling in options, especially before selling them. The purchaser of an option can never lose more than the premium paid because the worst case scenario is that the option remains “out of the money.” For example, if the market price of a share on which you hold a European call option is below the option’s strike price on the expiration date the option would expire valueless. (If the market price was $15 you would not want to exercise your right to buy at $20.) Similarly, if the market price (e.g., $25 to $30 range) of an American put option remains above the strike price (e.g., $15) for the entire term of the contract, the option would be out of the money. (Why exercise your right to sell something for $15 that you could sell for $25 plus?!) The seller of an option, by contrast, can lose a large sum if an option goes a long way into the money. For example, the seller of a call option with a strike price of $50 would lose $950 per share if the price of the underlying share soared to $1,000. (The holder of the option would exercise its right to call or buy the shares from the option issuer at $50.) Such large movements are rare, of course, but it would only take one instance to ruin most individual option issuers.</p>
+    <div class="callout editable block" id="wright_1.1-5066-20111012-152602-392525">
+        <h3 class="title">Stop and Think Box</h3>
+        <p class="para">All else equal, what should cost more to purchase, an American or a European option? Why?</p>
+        <p class="para">American options are more valuable than European options, ceteris paribus, because the American option is more likely to be valuable or “in the money” as it can be exercised on numerous days, not just one.</p>
+        <p class="para"> </p>
+        <p class="para"> </p>
+    </div>
+    <p class="para editable block" id="wright_1.1-5066-20111012-152905-626601">Swaps are very different from options (though they can be combined to form a derivative called a swaption, or an option to enter into a swap). As the name implies, swaps are exchanges of one asset for another on a predetermined, typically repeated basis. A savings bank, for example, might agree to give $50,000 per year to a finance company in exchange for the finance company’s promise to pay the savings bank $1 million times a variable interest rate such as <span class="margin_term"><a class="glossterm">LIBOR</a><span class="glossdef">The London Interbank Offered Rate, or the variable interest rate at which banks lend to each other overnight in the London wholesale money market.</span></span>. Such an agreement, called an interest rate swap, would buffer the bank against rising interest rates while protecting the finance company from lower ones, as in the following table:</p>
+    <div class="table block" frame="all">
+        <p class="title"><span class="title-prefix">Table 12.3</span> Payments Under an Interest Rate Swap</p>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Savings bank owes ($)</th>
+                    <th>LIBOR (%)</th>
+                    <th>Finance company owes ($)</th>
+                    <th>Net payment to/from bank ($)</th>
+                    <th>Net payment to/from finance company ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>50,000</td>
+                    <td>5.00</td>
+                    <td>50,000</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>50,000</td>
+                    <td>6.00</td>
+                    <td>60,000</td>
+                    <td>10,000</td>
+                    <td>−10,000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>50,000</td>
+                    <td>4.00</td>
+                    <td>40,000</td>
+                    <td>−10,000</td>
+                    <td>10,000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>50,000</td>
+                    <td>1.25</td>
+                    <td>12,500</td>
+                    <td>−37,500</td>
+                    <td>37,500</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="wright_1.1-5066-20111012-153001-588316">A credit default swap (CDS) is a type of swap used to create an unregulated form of insurance against a default by a bond issuer such as a country or corporation. In a CDS, the holder of bonds promises to make a relatively small payment (similar to an insurance premium) to a counterparty in exchange for a large payment if the bond issuer does not pay principal or interest on its bonds as promised. CDSs exacerbated the financial crisis of 2008 because many counterparties failed to make good on their promise to indemnify bondholders in case of default. CDSs are still largely unregulated and present systemic risks that most other derivatives do not.</p>
+    <div class="key_takeaways editable block" id="wright_1.1-5066-20111012-153041-889857">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist">
+            <li>Options are financial derivatives that in exchange for a premium provide holders with the option (the right but not the obligation) to buy or sell a stock or other underlying asset at a predetermined price up to or on a predetermined date.</li>
+            <li>Option holders/buyers can never lose more than the premium paid for the option, the value of which is a function of interest rates, the strike price, the expiration date, and the volatility of the underlying asset.</li>
+            <li>Swaps are derivatives in which two parties agree to swap or exchange one asset for another at one or more future dates. Like options, they can be used to hedge or speculate.</li>
+            <li>Credit Default Swaps are a special form of swap akin to an insurance policy on bonds. Despite their ability to increase systemic volatility, they remain largely unregulated.</li>
+        </ul>
+    </div>
+    <p class="para editable block" id="wright_1.1-5066-p1318446941776"></p>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s15-02-forwards-and-futures.html"><img src="shared/images/batch-left.png"></a> <a href="s15-02-forwards-and-futures.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s15-04-suggested-reading.html">Next Section</a> <a href="s15-04-suggested-reading.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Pricing Debt Instruments</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s07-03-compounding-periods.html"><img src="shared/images/batch-left.png"></a> <a href="s07-03-compounding-periods.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s07-05-what-s-the-yield-on-that.html">Next Section</a> <a href="s07-05-what-s-the-yield-on-that.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="wright-ch04_s04" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.4</span> Pricing Debt Instruments</h2>
+    <div class="learning_objectives editable block" id="wright-ch04_s04_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="wright-ch04_s04_l01">
+            <li>What are debt instruments and how are they priced?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright_1.1-5066-20111011-140542-125188"><em class="emphasis">Believe it or not, you are now equipped to calculate the price of any</em> <span class="margin_term"><a class="glossterm">debt instrument</a><span class="glossdef">A bond, IOU, or other contract (like a discount bond, simple loan, fixed payment loan, or coupon bond) promising the payment of money in the future.</span></span> <em class="emphasis">or contract provided you know the rate of interest, compounding period, and the size and timing of the payments</em>. Four major types of instruments that you are likely to encounter include discount bonds, simple loans, fixed-payment loans, and coupon bonds.</p>
+    <p class="para editable block" id="wright_1.1-5066-20111011-135532-341108">A <span class="margin_term"><a class="glossterm">discount bond</a><span class="glossdef">A debt instrument that makes only one payment, its face value on its maturity or redemption date. Also known as a zero coupon bond.</span></span> (aka a <span class="margin_term"><a class="glossterm">zero coupon bond</a><span class="glossdef"><em class="emphasis">See</em> discount bond.</span></span> or simply a <span class="margin_term"><a class="glossterm">zero</a><span class="glossdef"><em class="emphasis">See</em> discount bond.</span></span>) makes only one payment, its face value on its maturity or redemption date, so its price is easily calculated using the present value formula. If the interest rate is 6 percent, the price of a discount bond with a $1,000 face value due in exactly a year would be $943.40 (1000/1.06). If the interest rate is 12 percent, the same discount bond’s price would be only $892.86 (1000/1.12). If the bond is due in two years at 12 percent, its price would be $797.19 (1000/(1.12<sup class="superscript">2</sup>), and so forth.</p>
+    <p class="para editable block" id="wright_1.1-5066-20111011-135950-366102">A <span class="margin_term"><a class="glossterm">simple loan</a><span class="glossdef">A debt instrument where the borrower repays the principal and interest at the end of the loan.</span></span> is the name for a loan where the borrower repays the principal and interest at the end of the loan. Use the future value formula to calculate the sum due upon maturity. For example, a simple loan of $1,000 for one year at 3.5 percent would require the borrower to repay $1,035.00 (1000× 1.035), while a simple loan at the same rate for two years would require a payment of $1,071.23 (1000 × 1.035<sup class="superscript">2</sup>). (Note that the correct answer is not just $35 doubled due to the effects of compounding or capitalizing the interest due at the end of the first year.)</p>
+    <p class="para editable block" id="wright_1.1-5066-20111011-135950-366160">A <span class="margin_term"><a class="glossterm">fixed-payment loan</a><span class="glossdef">A debt instrument in which the borrower makes periodic repayments of principal and interest.</span></span> (aka a fully amortized loan) is one in which the borrower periodically (for example, weekly, bimonthly, monthly, quarterly, annually, etc.) repays a portion of the principal along with the interest. With such loans, which include most auto loans and home mortgages, all payments are equal. There is no big balloon or principal payment at the end because the principal shrinks, slowly at first but more rapidly as the final payment grows nearer, as in <a class="xref" href="#wright-ch04_s04_f01">Figure 4.2 "Sample thirty-year amortizing mortgage"</a>.</p>
+    <p class="para editable block" id="wright-ch04_s04_p02">Principal borrowed: $500,000.00; Annual number of payments: 12; Total number of payments: 360; Annual interest rate: 6.00%; Regular monthly payment amount: $2,997.75</p>
+    <div class="figure large editable block" id="wright-ch04_s04_f01">
+        <p class="title"><span class="title-prefix">Figure 4.2</span> Sample thirty-year amortizing mortgage</p>
+        <img src="section_07/536325aa15948464dd767e52953a8ce4.jpg">
+    </div>
+    <p class="para editable block" id="wright-ch04_s04_p03">Today, such schedules are most easily created using specialized financial software, including Web sites like <a class="link" href="http://ray.met.fsu.edu/cgi-bin/amortize">http://ray.met.fsu.edu/cgi-bin/amortize</a>, <a class="link" href="http://www.yona.com/loan/">http://www.yona.com/loan/</a>, or <a class="link" href="http://realestate.yahoo.com/calculators/amortization.html">http://realestate.yahoo.com/calculators/amortization.html</a>. If you wanted to buy this mortgage (in other words, if you wanted to purchase the right to receive the monthly repayments of $2,997.75) from the original lender (there are still secondary markets for mortgages, though they are less active than they were before the financial crisis that began in 2007), you’d simply sum the present value of each of the remaining monthly payments. (Again, a computer is highly recommended here!)</p>
+    <p class="para editable block" id="wright-ch04_s04_p04"><em class="emphasis">Finally, a</em> <span class="margin_term"><a class="glossterm">coupon bond</a><span class="glossdef">A debt instrument that makes interest payments periodically until its maturity or redemption date, when the final interest payment and the principal are to be paid.</span></span> <em class="emphasis"> is so-called because, in the past, owners of the bond received interest payments by clipping one of the coupons and remitting it to the borrower (or its paying agent, usually a bank)</em>. <a class="xref" href="#wright-ch04_s04_f02">Figure 4.3 "Sample bond coupon, Malden &amp; Melrose Railroad Co., 1860"</a>, for example, is a coupon paid (note the cancellation holes and stamp) to satisfy six months’ interest on bond number 21 of the Malden &amp; Melrose Railroad Company of Boston, Massachusetts, sometime on or after April 1, 1863. <a class="xref" href="#wright-ch04_s04_f03">Figure 4.4 "Michigan Central Railroad, 3.5 percent bearer gold bond with coupons attached, 1902"</a> is a $1,000 par value coupon bond issued in 1902, with some of the coupons still attached (on the left side of the figure).</p>
+    <div class="figure small editable block" id="wright-ch04_s04_f02">
+        <p class="title"><span class="title-prefix">Figure 4.3</span> Sample bond coupon, Malden &amp; Melrose Railroad Co., 1860</p>
+        <img src="section_07/49fe772b99b73989291f5fea6ed7e212.jpg">
+        <div class="copyright">
+            <p class="para">Courtesy of CelebrateBoston.com</p>
+        </div>
+    </div>
+    <div class="figure small editable block" id="wright-ch04_s04_f03">
+        <p class="title"><span class="title-prefix">Figure 4.4</span> Michigan Central Railroad, 3.5 percent bearer gold bond with coupons attached, 1902</p>
+        <img src="section_07/5dc7cf3b988709d269e61bd1aaa93ec3.jpg">
+        <div class="copyright">
+            <p class="para">Museum of American Finance</p>
+        </div>
+    </div>
+    <p class="para editable block" id="wright-ch04_s04_p05">Even if it no longer uses a physical coupon like those illustrated in <a class="xref" href="#wright-ch04_s04_f02">Figure 4.3 "Sample bond coupon, Malden &amp; Melrose Railroad Co., 1860"</a> and <a class="xref" href="#wright-ch04_s04_f03">Figure 4.4 "Michigan Central Railroad, 3.5 percent bearer gold bond with coupons attached, 1902"</a>, a coupon bond makes one or more interest payments periodically (for example, monthly, quarterly, semiannually, annually, etc.) until its maturity or redemption date, when the final interest payment and all of the principal are paid. <em class="emphasis">The sum of the present values of each future payment will give you the price</em>. So we can calculate the price today of a $10,000 face or par value coupon bond that pays 5 percent interest annually until its face value is redeemed (its principal is repaid) in exactly five years if the market rate of interest is 6 percent, 4 percent, or any other percent for that matter, simply by summing the present value of each payment:</p>
+    <p class="para editable block" id="wright-ch04_s04_p06">PV<sub class="subscript">1</sub> = $500/(1.06) = $471.70 (This is the interest payment after the first year. The $500 is the <span class="margin_term"><a class="glossterm">coupon</a><span class="glossdef">The interest rate promised to the owner of a coupon bond.</span></span> or interest payment, which is calculated by multiplying the bond’s face value, in this case, $10,000, by the bond’s contractual rate of interest or “coupon rate,” in this case, 5 percent. $10,000 × .05 = $500.)</p>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m001" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>2</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.06</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>2</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>445.00</mn>
+						<mtext> (If this doesn’t look familiar, you didn’t do Exercise 1 enough!)</mtext>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m002" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>3</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.06</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>3</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>419.81</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m003" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>4</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.06</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>4</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>396.05</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m004" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>5</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>10,500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.06</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>5</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>7,846.21</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m005" display="block">
+					<mrow>
+						<mtext> ($10,500 is the final interest payment of $500 plus the repayment of the bond’s face value of $10,000</mtext>
+						<mtext>.)</mtext>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s04_p07">That adds up to $9,578.77. If you are wondering why the bond is worth less than its face value, the key is the difference between the contractual interest or coupon rate it pays, 5 percent, and the market rate of interest, 6 percent. <em class="emphasis">Because the bond pays at a rate lower than the going market, people are not willing to pay as much for it, so its price sinks below par</em>. By the same reasoning, people should be willing to pay more than the face value for this bond if interest rates sink below its coupon rate of 5 percent. Indeed, when the market rate of interest is 4 percent, its price is $10,445.18 (give or take a few pennies, depending on rounding):</p>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m006" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>1</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<mo stretchy="false">(</mo>
+						<mn>1.04</mn>
+						<mo stretchy="false">)</mo>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>480.77</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m007" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>2</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.04</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>2</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>462.28</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m008" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>3</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.04</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>3</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>444.50</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m009" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>4</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.04</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>4</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>427.40</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m010" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>5</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>10,500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.04</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>5</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>8,630.23</mn>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s04_p08">If the market interest rate is exactly equal to the coupon rate, the bond will sell at its par value, in this case, $10,000.00. Check it out:</p>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m011" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>1</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<mo stretchy="false">(</mo>
+						<mn>1.05</mn>
+						<mo stretchy="false">)</mo>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>476.1905</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m012" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>2</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.05</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>2</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>453.5147</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m013" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>3</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.05</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>3</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>431.9188</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m014" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>4</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.05</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>4</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>411.3512</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m015" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>5</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>10,500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.05</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>5</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>8,227.0247</mn>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s04_p09">Calculating the price of a bond that makes quarterly payments over thirty years can become quite tedious because, by the method shown above, that would entail calculating the PV of 120 (30 years times 4 payments a year) payments. Until not too long ago, people used special bond tables to help them make the calculations more quickly. <em class="emphasis">Today, to speed things up and depending on their needs, most people use financial calculators, specialized financial software, and canned spreadsheet functions like Excel’s PRICEDISC or PRICEMAT, custom spreadsheet formulas, or Web-based calculators</em> like <a class="link" href="http://www.calculatorweb.com/calculators/bondcalc.shtml">http://www.calculatorweb.com/calculators/bondcalc.shtml</a> or <a class="link" href="http://www.investinginbonds.com/calcs/tipscalculator/TipsCalcForm.aspx">http://www.investinginbonds.com/calcs/tipscalculator/TipsCalcForm.aspx</a>.</p>
+    <p class="para editable block" id="wright_1.1-5066-20111011-141839-344931">It’s time once again to get a little practice. Don’t worry; these are easy enough to work out on your own.</p>
+    <div class="exercises editable block" id="wright-ch04_s04_n02">
+        <h3 class="title">Exercises</h3>
+        <p class="para" id="wright-ch04_s04_p10">Assume no default risks or transaction costs.</p>
+        <ol class="orderedlist" id="wright-ch04_s04_l02">
+            <li>What is the price of a 10 percent coupon bond, payable annually, with a $100 face value that matures in 3 years if interest rates are 7 percent? </li>
+            <li>What is the price of a 5 percent coupon bond, payable annually, with a $1,000 face value that matures in 5 years if interest rates are 5 percent?</li>
+            <li>If interest rates were 4 percent, how much would you give today for a loan with a $100,000 balloon principal payment due in a year and that will pay $16,000 in interest at the end of each quarter, including the final quarter when the principal falls due? </li>
+            <li>What is the value today of a share of stock that you think will be worth $50 in a year and that throws off $1 in dividends each quarter until then, assuming the market interest rate is 10 percent? </li>
+            <li>What is the value today of a share of stock that you think will be worth $50 in a year and that throws off $1 in dividends each quarter until then if the market interest rate is 1 percent? </li>
+        </ol>
+    </div>
+    <div class="key_takeaways editable block" id="wright-ch04_s04_n03">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="wright-ch04_s04_l03">
+            <li>Debt instruments—like discount bonds, simple loans, fixed payment loans, and coupon bonds—are contracts that promise payment in the future.</li>
+            <li>They are priced by calculating the sum of the present value of the promised payments.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s07-03-compounding-periods.html"><img src="shared/images/batch-left.png"></a> <a href="s07-03-compounding-periods.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s07-05-what-s-the-yield-on-that.html">Next Section</a> <a href="s07-05-what-s-the-yield-on-that.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>A Simple Model of Multiple Deposit Creation</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s18-02-open-market-operations.html"><img src="shared/images/batch-left.png"></a> <a href="s18-02-open-market-operations.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s18-04-a-more-sophisticated-money-mul.html">Next Section</a> <a href="s18-04-a-more-sophisticated-money-mul.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="wright-ch14_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">15.3</span> A Simple Model of Multiple Deposit Creation</h2>
+    <div class="learning_objectives editable block" id="wright-ch14_s03_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="wright-ch14_s03_l01">
+            <li>What is the multiple deposit creation process?</li>
+            <li>What is the money multiplier?</li>
+            <li>What are the major limitations of the simple deposit multiplier?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright-ch14_s03_p01"><em class="emphasis">The central bank pretty much controls the size of the monetary base</em>. (The check clearing process and the government’s banking activities can cause some short-term flutter, but generally the central bank can anticipate such fluctuations and respond accordingly.) <em class="emphasis">That does not mean, however, that the central bank controls the money supply, which consists of more than just MB</em>. (M1, for example, also includes checkable deposits.) The reason is that each $1 (or €1, etc.) of additional MB creates some multiple &gt; 1 of new deposits in a process called multiple deposit creation.</p>
+    <p class="para editable block" id="wright-ch14_s03_p02">Suppose Some Bank wants to decrease its holding of securities and increase its lending. It could sell $1 million of its securities to the central bank. The T-accounts would be:</p>
+    <div class="informaltable block" frame="all">
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th colspan="2">Some Bank</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Assets</td>
+                    <td>Liabilities</td>
+                </tr>
+                <tr>
+                    <td>Securities −$1 million</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Reserves +$1 million</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="informaltable block" frame="all">
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th colspan="2">Central Bank</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Assets</td>
+                    <td>Liabilities</td>
+                </tr>
+                <tr>
+                    <td>Securities +$1 million</td>
+                    <td>Reserves +$1 million</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="wright-ch14_s03_p03">Some Bank suddenly has $1 million in excess reserves. (Its deposits are unchanged, but it has $1 million more in cash.) The bank can now make more loans. So its T-account will be the following:</p>
+    <div class="informaltable block" frame="all">
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th colspan="2">Some Bank</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Assets</td>
+                    <td>Liabilities</td>
+                </tr>
+                <tr>
+                    <td>Loans +$1 million</td>
+                    <td>Deposits +$1 million</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="wright-ch14_s03_p04">Deposits are created in the process of making the loan, so the bank has effectively increased M1 by $1 million. The borrower will not leave the proceeds of the loan in the bank for long but instead will use it, within the guidelines set by the loan’s covenants, to make payments. As the deposits flow out of Some Bank, its excess reserves decline until finally Some Bank has essentially swapped securities for loans:</p>
+    <div class="informaltable block" frame="all">
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th colspan="2">Some Bank</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Assets</td>
+                    <td>Liabilities</td>
+                </tr>
+                <tr>
+                    <td>Securities ?$1 million</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Loans +$1 million</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="wright-ch14_s03_p05">But now there is another $1 million of checkable deposits out there and they rarely rest. Suppose, for simplicity’s sake, they all end up at Another Bank. Its T-account would be the following:</p>
+    <div class="informaltable block" frame="all">
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th colspan="2">Another Bank</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Assets Bank</td>
+                    <td>Liabilities</td>
+                </tr>
+                <tr>
+                    <td>Reserves +$1 million</td>
+                    <td>Checkable deposits +$1 million</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="wright-ch14_s03_p06">If the required reserve ratio (rr) is 10 percent, Another Bank can, and likely will, use those deposits to fund a loan, making its T-account:</p>
+    <div class="informaltable block" frame="all">
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th colspan="2">Another Bank</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Assets</td>
+                    <td>Liabilities</td>
+                </tr>
+                <tr>
+                    <td>Reserves +$.1 million</td>
+                    <td>Checkable Deposits +$1 million</td>
+                </tr>
+                <tr>
+                    <td>Loans +$.9 million</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="wright-ch14_s03_p07">That loan will also eventually be paid out to others and deposited into other banks, which in turn will lend 90 percent of them (1 ? rr) to other borrowers. Even if a bank decides to invest in securities instead of loans, as long as it buys the bonds from anyone but the central bank, the multiple deposit creation expansion will continue, as in <a class="xref" href="#wright-ch14_s03_f01">Figure 15.1 "Multiple deposit creation, with an increase in reserves of $1 million, if rr = .10"</a>.</p>
+    <div class="figure large medium-height editable block" id="wright-ch14_s03_f01">
+        <p class="title"><span class="title-prefix">Figure 15.1</span> Multiple deposit creation, with an increase in reserves of $1 million, if rr = .10</p>
+        <img src="section_18/11e140f7caa3107e1dad7e3a517f8945.jpg">
+    </div>
+    <p class="para editable block" id="wright-ch14_s03_p08">Notice that the increase in deposits is the same as the increase in loans from the previous bank. The increase in reserves is the increase in deposits times the required reserve ratio of .10, and the increase in loans is the increase in deposits times the remainder, .90. Rather than working through this rather clunky process every time, you can calculate the effects of increasing reserves with the so-called <em class="emphasis">simple deposit multiplier formula</em>:</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch14_s03_m001" display="block">
+					<mrow>
+						<mi>△D</mi>
+						<mo>=</mo>
+						<mo stretchy="false">(</mo>
+						<mn>1</mn>
+						<mo>/</mo>
+						<mi>r</mi>
+						<mi>r</mi>
+						<mo stretchy="false">)</mo>
+						<mo>×</mo>
+						<mi>△R</mi>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch14_s03_p09">where:</p>
+    <p class="para editable block" id="wright-ch14_s03_p10">△D = change in deposits</p>
+    <p class="para editable block" id="wright-ch14_s03_p11">△R = change in reserves</p>
+    <p class="para editable block" id="wright-ch14_s03_p12">Rr = required reserve ratio</p>
+    <span class="informalequation block">
+				<span class="mathphrase">1/.1 × 1 million = 10 million, just as in <a class="xref" href="#wright-ch14_s03_f01">Figure 15.1 "Multiple deposit creation, with an increase in reserves of $1 million, if rr = .10"</a></span>
+			</span>
+    <p class="para editable block" id="wright-ch14_s03_p13">Practice calculating the simple deposit multiplier in Exercise 2.</p>
+    <div class="exercises block" id="wright-ch14_s03_n02">
+        <h3 class="title">Exercise</h3>
+        <ol class="orderedlist" id="wright-ch14_s03_l02">
+            <li>
+                <p class="para">Use the simple deposit multiplier △D = (1/rr) × △R to calculate the change in deposits given the following conditions:</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Required Reserve Ratio</th>
+                                <th>Change in Reserves</th>
+                                <th>Answer: Change in Deposits</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>.1</td>
+                                <td>10</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>.5</td>
+                                <td>10</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>.1</td>
+                                <td>−10</td>
+                                <td>−100</td>
+                            </tr>
+                            <tr>
+                                <td>.1</td>
+                                <td>100</td>
+                                <td>1,000</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>43.5</td>
+                                <td>ERROR—cannot divide by 0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <div class="callout editable block" id="wright-ch14_s03_n03">
+        <h3 class="title">Stop and Think Box</h3>
+        <p class="para" id="wright-ch14_s03_p14">Suppose the Federal Reserve wants to increase the amount of checkable deposits by $1,000,000 by conducting open market operations. Using the simple model of multiple deposit creation, determine what value of securities the Fed should purchase, assuming a required reserve ratio of 5 percent. What two major assumptions does the simple model of multiple deposit creation make? Show the appropriate equation and work.</p>
+        <p class="para" id="wright-ch14_s03_p15">The Fed should purchase $50,000 worth of securities. The simple model of multiple deposit creation is △D = (1/rr) × △R, which of course is the same as △R = △D/(1/rr). So for this problem 1,000,000/(1/.05) = $50,000 worth of securities should be purchased. This model assumes that money is not held as cash and that banks do not hold excess reserves.</p>
+    </div>
+    <p class="para editable block" id="wright-ch14_s03_p16">Pretty easy, eh? <em class="emphasis">Too bad the simple deposit multiplier isn’t very accurate.</em> It provides an upper bound to the deposit creation process. The model simply isn’t very realistic. Sometimes banks hold excess reserves, and people sometimes prefer to hold cash instead of deposits, thereby stopping the multiple deposit creation process cold. If the original borrower, for example, had taken cash and paid it out to people who also preferred cash over deposits no expansion of the money supply would have occurred. Ditto if Some Bank had decided that it was too risky to make new loans and had simply exchanged its securities for reserves. Or if no one was willing to borrow. Those are extreme examples, but anywhere along the process leaks into cash or excess reserves sap the deposit multiplier. That is why, at the beginning of the chapter, we said that depositors, borrowers, and banks were also important players in the money supply determination process. In the next section, we’ll take their decisions into account.</p>
+    <div class="key_takeaways editable block" id="wright-ch14_s03_n04">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="wright-ch14_s03_l03">
+            <li>The multiple deposit creation process works like this: say that the central bank buys $100 of securities from Bank 1, which lends the $100 in cash it receives to some borrower. Said borrower writes checks against the $100 in deposits created by the loan until all the money rests in Bank 2. Its deposits and reserves increased by $100, Bank 2 lends as much as it can, say (1 − rr = .9) or $90, to another borrower, who writes checks against it until it winds up in Bank 3, which also lends 90 percent of it. Bank 4 lends 90 percent of that, Bank 5 lends 90 percent of that, and so on, until a $100 initial increase in reserves has led to a $1,000 increase in deposits (and loans).</li>
+            <li>The simple deposit multiplier is △D = (1/rr) × △R, where △D = change in deposits; △R = change in reserves; rr = required reserve ratio.</li>
+            <li>The simple deposit multiplier assumes that banks hold no excess reserves and that the public holds no currency. We all know what happens when we assume or <em class="emphasis">ass</em>|u|<em class="emphasis">me</em>. These assumptions mean that the simple deposit multiplier overestimates the multiple deposit creation process, providing us with an upper-bound estimate.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s18-02-open-market-operations.html"><img src="shared/images/batch-left.png"></a> <a href="s18-02-open-market-operations.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s18-04-a-more-sophisticated-money-mul.html">Next Section</a> <a href="s18-04-a-more-sophisticated-money-mul.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

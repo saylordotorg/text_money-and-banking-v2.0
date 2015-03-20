@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Interest Rates</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s06-money.html"><img src="shared/images/batch-left.png"></a> <a href="s06-money.html">Previous Chapter</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s08-the-economics-of-interest-rate.html">Next Chapter</a> <a href="s08-the-economics-of-interest-rate.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="chapter" id="wright-ch04" version="5.0" lang="en">
+    <h1 class="title editable block">
+<span class="title-prefix">Chapter 4</span> Interest Rates</h1>
+    <div class="learning_objectives editable block" id="wright-ch04_n01">
+        <h3 class="title">Chapter Objectives</h3>
+        <p class="para" id="wright-ch04_p01">By the end of this chapter, students should be able to:</p>
+        <ol class="orderedlist" id="wright-ch04_l01">
+            <li>Define interest and explain its importance.</li>
+            <li>Write and explain the present value formula.</li>
+            <li>Write and explain the future value formula.</li>
+            <li>Calculate present and future value for multiple periods with annual and more frequent compounding.</li>
+            <li>Define and price major types of debt instruments including discount bonds, simple loans, fixed payment loans, coupon bonds, and perpetuities.</li>
+            <li>Define yield to maturity and identify the types of financial instruments for which it is relatively easy to calculate.</li>
+            <li>Explain why bond prices move inversely to market interest rates.</li>
+            <li>Explain why some bond prices are more volatile than others.</li>
+            <li>Define rate of return and explain how it differs from yield to maturity.</li>
+            <li>Explain the difference between real and nominal interest rates.</li>
+        </ol>
+    </div>
+</div>
+<div class="section" id="wright-ch04_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.1</span> The Interest of Interest</h2>
+    <div class="learning_objectives editable block" id="wright-ch04_s01_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="wright-ch04_s01_l01">
+            <li>What is interest and why is it important?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright-ch04_s01_p01"><span class="margin_term"><a class="glossterm">Interest</a><span class="glossdef">The opportunity cost of money.</span></span>, <em class="emphasis">the opportunity cost of money, is far from mysterious, but it warrants our careful consideration because of its importance</em>. <span class="margin_term"><a class="glossterm">Interest rates</a><span class="glossdef">The price of borrowed money.</span></span><em class="emphasis">, the price of borrowing money, are crucial determinants of the prices of assets, especially financial instruments like stocks and bonds, and general macroeconomic conditions, including</em> <span class="margin_term"><a class="glossterm">economic growth</a><span class="glossdef">Real per capita GDP.</span></span>. In fact, <span class="margin_term"><a class="glossterm">ceteris paribus</a><span class="glossdef">All else equal.</span></span> (like your grades!) the probability of you landing a job upon graduation will depend in large part on prevailing interest rates. If rates are low, businesses will be more likely to borrow money, expand production, and hire you. If rates are high, businesses will be less likely to expand or to hire you. Without a job, you’ll be forced to move back home. Best to pay attention then!</p>
+    <p class="para editable block" id="wright-ch04_s01_p02">Interest can be thought of as the payment it takes to induce a lender to part with his, her, or its money for some period of time, be it a day, week, month, year, decade, or century. To make comparisons between those payments easier, interest is almost always expressed as an annual percentage rate, the number of dollars (or other currency)<span class="footnote" id="wright-ch04_fn86"><a class="link" href="http://fx.sauder.ubc.ca/currency_table.html">fx.sauder.ubc.ca/currency_table.html</a></span> paid for the use of $100 per year. <em class="emphasis">Several ways of measuring interest rates exist, but here you’ll learn only</em> <span class="margin_term"><a class="glossterm">yield to maturity (YTM)</a><span class="glossdef">The most economically accurate way of measuring interest rates.</span></span><em class="emphasis">, the method preferred by economists for its accuracy</em>. The key is to learn to compare the value of money today, called <span class="margin_term"><a class="glossterm">present value (PV)</a><span class="glossdef">The value of money today.</span></span> (represented here by the variable PV and aka present discounted value or price), to the value of money tomorrow, called <span class="margin_term"><a class="glossterm">future value (FV)</a><span class="glossdef">The value of money at some point in the future.</span></span> (represented here by the variable FV).</p>
+    <div class="key_takeaways editable block" id="wright-ch04_s01_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="wright-ch04_s01_l02">
+            <li>Interest is the opportunity cost of lending money or the price of borrowing it and can be thought of as the payment a borrower needs to induce him, her, or it to lend.</li>
+            <li>Interest is important because it helps to determine the price of assets, especially financial assets, and to determine various macroeconomic variables, including aggregate output.</li>
+        </ul>
+    </div>
+</div>
+<div class="section" id="wright-ch04_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.2</span> Present and Future Value</h2>
+    <div class="learning_objectives editable block" id="wright-ch04_s02_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="wright-ch04_s02_l01">
+            <li>What are the formulas for present value and future value, and what types of questions do they help to answer?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright-ch04_s02_p01"><em class="emphasis">A moment’s reflection should convince you that money today is always</em><span class="footnote" id="wright-fnXX_066">Certain interest rates occasionally turn very slightly (−0.004%) negative. The phenomenon is so rare and minor that it need not detain us here.</span><em class="emphasis">worth more than money tomorrow</em>. If you don’t believe me, send me all of your money immediately. I’ll return every cent of it—scout’s honor—in exactly one year. I won’t hold my breath. You’d be foolish indeed to forgo food, clothes, housing, transportation, and entertainment for a year for no remuneration whatsoever. That’s why a dollar today is worth more than a dollar tomorrow. (Another reason that a dollar today is worth more than a dollar tomorrow is that, in modern economies based on fiat money, prices tend to rise every year. So $100 tomorrow will buy fewer goods and services than $100 today will. We will discuss the impact of <span class="margin_term"><a class="glossterm">inflation</a><span class="glossdef">A sustained increase in the price level or average prices.</span></span> on interest rates more at the end of this chapter. For now, we consider only <span class="margin_term"><a class="glossterm">nominal interest rates</a><span class="glossdef">The price of borrowing money as it is usually stated, unadjusted for inflation.</span></span>, not the <span class="margin_term"><a class="glossterm">real interest rate</a><span class="glossdef">The price of borrowing money adjusted for inflation.</span></span>.) But what if I told you that if you gave me $100 today, I’d give you $1,000 in a year? Most lenders would jump at that offer (provided they thought I would pay as promised and not default), but I wouldn’t offer it and neither would most borrowers. In fact, about $110 would be the most I’d be willing to give you in a year for $100 today. That’s an interest rate of 10 percent ($10/$100 = .1 or 10%), which, as comedian Adam Sandler might say, is “not too shabby.”<span class="footnote" id="wright-fnXX_067"><a class="link" href="http://www.tsrocks.com/a/adam_sandler_texts/the_chanukah_song.html">www.tsrocks.com/a/adam_sandler_texts/the_chanukah_song.html</a></span> If we let the loan ride, as they say, capitalizing the interest or, in other words, paying interest on the interest every year, called annually <span class="margin_term"><a class="glossterm">compounding</a><span class="glossdef">Earning interest on interest.</span></span> interest, your $100 investment would grow in value, as shown in <a class="xref" href="#wright-ch04_s02_f01">Figure 4.1 "The fate of $100 invested at 10%, compounded annually"</a>. (The <span class="margin_term"><a class="glossterm">compounding period </a><span class="glossdef">The amount of time that passes before interest begins to earn interest.</span></span> need not be a year, and it is even possible to compound interest continuously, but unless otherwise noted we will compound annually in this chapter.)</p>
+    <div class="figure large medium-height editable block" id="wright-ch04_s02_f01">
+        <p class="title"><span class="title-prefix">Figure 4.1</span> The fate of $100 invested at 10%, compounded annually</p>
+        <img src="section_07/f2fb3cfe3047f49a1de3aa141bb39d69.jpg">
+    </div>
+    <p class="para editable block" id="wright-ch04_s02_p02">The figures in the table are easily calculated by multiplying the previous year’s value by 1.10, 1 representing the principal value and .10 representing the interest rate <em class="emphasis">expressed as a decimal</em>. So $100 today (year = 0) is, at 10 percent interest compounded annually, worth $110 in a year (100 × 1.1), $121 after two years (110 × 1.1), $131.10 after three years (121 × 1.1), and so forth. The quick way to calculate this for any year is to use the following formula:</p>
+    <p class="para editable block" id="wright-ch04_s02_p03">FV = PV(1 + i)<sup class="superscript">n</sup></p>
+    <p class="para editable block" id="wright-ch04_s02_p17">where</p>
+    <p class="para editable block" id="wright-ch04_s02_p04">FV = the future value (the value of your investment in the future)</p>
+    <p class="para editable block" id="wright-ch04_s02_p05">PV = the present value (the amount of your investment today)</p>
+    <p class="para editable block" id="wright-ch04_s02_p06">(1 + i)<sup class="superscript">n</sup> = the future value factor (aka the present value factor or discount factor in the equation below)</p>
+    <p class="para editable block" id="wright-ch04_s02_p07"><em class="emphasis">i</em> = interest rate (decimalized, for example, 6% = .06; 25% = .25, 2.763% = .02763, etc.)</p>
+    <p class="para editable block" id="wright-ch04_s02_p08"><em class="emphasis">n</em> = number of terms (here, years; elsewhere days, months, quarters)</p>
+    <p class="para editable block" id="wright-ch04_s02_p09">For $100 borrowed today at 10 percent compounded annually, in 100 years I’d owe you $1,378,061 (FV = 100 × 1.1<sup class="superscript">100</sup>). (Good luck collecting that one!)</p>
+    <p class="para editable block" id="wright-ch04_s02_p10">What if someone offers to pay you, say, $1,000 in 5 years? How much would you be willing to pay today for that? Clearly, something less than $1,000. Instead of taking a PV and expanding it via multiplication to determine an FV, here you must do the opposite, or in other words, reduce or “discount” an FV to a PV. You do so by dividing, as in the following formula:</p>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s02_m001" display="block">
+					<mtable columnalign="left">
+						<mtr>
+							<mtd>
+								<mi>P</mi>
+								<mi>V</mi>
+								<mtext> </mtext>
+								<mo>=</mo>
+								<mtext> </mtext>
+								<mi>F</mi>
+								<mi>V</mi>
+								<mo>/</mo>
+								<mo stretchy="false">(</mo>
+								<mn>1</mn>
+								<mo>+</mo>
+								<mi>i</mi>
+								<msup>
+									<mo stretchy="false">)</mo>
+									<mi>n</mi>
+								</msup>
+							</mtd>
+						</mtr>
+						<mtr>
+							<mtd>
+								<mtext>or </mtext>
+								<mi>P</mi>
+								<mi>V</mi>
+								<mtext> </mtext>
+								<mo>=</mo>
+								<mtext> </mtext>
+								<mn>1000</mn>
+								<mo>/</mo>
+								<mo stretchy="false">(</mo>
+								<mn>1</mn>
+								<mo>+</mo>
+								<mi>i</mi>
+								<msup>
+									<mo stretchy="false">)</mo>
+									<mn>5</mn>
+								</msup>
+							</mtd>
+						</mtr>
+					</mtable>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s02_p11">Obviously, we can’t solve this equation unless one of the two remaining variables is given. If the interest rate is given as 5 percent, you would pay $783.53 today for $1,000 payable in 5 years (PV = 1000/1.05<sup class="superscript">5</sup>). If it is 20 percent, you’d give only $401.88 (PV = 1000/1.2<sup class="superscript">5</sup>). If it is 1 percent, you would give $951.47 (PV = 1000/1.01<sup class="superscript">5</sup>). <em class="emphasis">Notice that as the interest rate rises (falls), the present value (price) of the future payment falls (rises). In other words, the price (PV) of some future payment (some FV; generically, a bond) and the rate of interest are inversely related</em>. You can see this algebraically by noting that the <em class="emphasis">i</em> term is in the denominator, so as it gets larger, PV must get smaller (holding FV constant, of course). Economically this makes sense because a higher interest rate means a higher opportunity cost for money, so a sum payable in the future is worth less the more dear money is (the more it costs to borrow it).</p>
+    <p class="para editable block" id="wright-ch04_s02_p12">If payment of the bond described just above were to be made in ten years instead of five, at 1 percent interest per year, you’d pay $905.29 (PV = 1000/1.01<sup class="superscript">10</sup>). Note here that, holding the interest rate (and all other factors) constant, you give less today for a payment further in the future ($905.29 &lt; $951.47). That too makes good sense because you’re without your money longer and need to be compensated for it by paying a lower price for the bond/promise/IOU today.</p>
+    <div class="callout editable block" id="wright-ch04_s02_n02">
+        <h3 class="title">Stop and Think Box</h3>
+        <p class="para" id="wright-ch04_s02_p13">Congratulations, you just won the Powerball: $100 million payable in $5 million installments over 20 years! Did you really win $100 million? (<em class="emphasis">Hint</em>: Calculate the PV of the final payment with interest at 4 percent.)</p>
+        <p class="para" id="wright-ch04_s02_p14">No; 5 × 20 = 100, but the money payable next year and in subsequent years is not worth $5 million today if interest rates are above 0, and they almost always are. For example, the last payment, with interest rates at 4 percent compounded annually, has a PV of only 5,000,000/(1.04)<sup class="superscript">20</sup> = $2,281,934.73.</p>
+    </div>
+    <p class="para editable block" id="wright-ch04_s02_p15">This is a great place to stop and drill until calculating present value and future value becomes second nature to you. Work through the following problems until it hurts. Then do them again, standing on your head or on one leg.</p>
+    <div class="exercises editable block" id="wright-ch04_s02_n03">
+        <h3 class="title">Exercises</h3>
+        <p class="para" id="wright-ch04_s02_p16">For all questions in this set, interest compounds annually and there are no transaction fees, defaults, etc.</p>
+        <ol class="orderedlist" id="wright-ch04_s02_l02">
+            <li>On your seventieth birthday, you learn that your grandma, bless her soul, deposited $50.00 for you on the day of your birth in a savings account bearing 5 percent interest. How much is in the account? </li>
+            <li>You won $1 million in the lottery but unfortunately the money is payable in a year and you want to start spending it right away. If interest is at 8 percent, how much can you receive today in exchange for that $1 million in year? </li>
+            <li>As a college freshman, you hoped to save $2,500 to “pimp your ride” as a college graduation present to yourself. You put $2,012.98 from your high school graduation haul in the bank at 5 percent interest. Will you meet your goal? </li>
+            <li>You’ve won a scholarship for your senior year worth $1,500, but it is payable only after graduation, a year hence. If interest is at 15 percent, how much is your scholarship worth today? </li>
+            <li>You determine that you need $1,750,000 saved in order to retire comfortably. When you turn 25, you inherit $350,017. If you invest that sum immediately at 4.42 percent, can you retire at age 65 if you have no other savings? </li>
+            <li>You own two bonds, each with a face, or payoff, value of $1,000. One falls due in exactly one year and the other in exactly three years. If interest is at 2.35 percent, how much are those bonds worth today? What if interest rates jump to 12.25 percent? </li>
+            <li>To purchase a car, you borrowed $10,000 from your brother. You offered to pay him 8 percent interest and to repay the loan in exactly three years. How much will you owe your bro? </li>
+            <li>As part of a lawsuit settlement, a major corporation offers you $100,000 today or $75,000 next year. Which do you choose if interest rates are 5 percent? If they are 13.47886 percent? </li>
+            <li>Exactly 150 years ago, the U.S. government promised to pay a certain Indian tribe $3,500, or 7 percent interest until it did so. Somehow, the account was unpaid. How much does the government owe the tribe for this promise? </li>
+            <li>As part of an insurance settlement, you are offered $100,000 today or $125,000 in five years. If the applicable interest rate is 1 percent, which option do you choose? What if the interest rate is 5 percent? </li>
+        </ol>
+    </div>
+    <div class="key_takeaways editable block" id="wright-ch04_s02_n04">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="wright-ch04_s02_l03">
+            <li>The present value formula is PV = FV/(1 + i)<sup class="superscript">n</sup> where PV = present value, FV = future value, <em class="emphasis">i</em> = decimalized interest rate, and <em class="emphasis">n</em> = number of periods. It answers questions like, How much would you pay today for $X at time y in the future, given an interest rate and a compounding period?</li>
+            <li>The future value formula is FV = PV× (1 + i)<sup class="superscript">n</sup>. It answers questions like, How much will $X invested today at some interest rate and compounding period be worth at time Y?</li>
+        </ul>
+    </div>
+</div>
+<div class="section" id="wright-ch04_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.3</span> Compounding Periods</h2>
+    <div class="learning_objectives editable block" id="wright-ch04_s03_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="wright-ch04_s03_l01">
+            <li>If interest compounds other than annually, how does one calculate PV and FV?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright-ch04_s03_p01">Interest does not always compound annually, as assumed in the problems already presented in this chapter. Sometimes it compounds quarterly, monthly, daily, even continuously. The more frequent the compounding period, the more valuable the bond or other instrument, all else constant. The mathematics remains the same (though a little more difficult when compounding is continuous), but you must be careful about what you plug into the equation for <em class="emphasis">i</em> and n. For example, $1,000 invested at 12 percent for a year compounded annually would be worth $1,000 × (1.12)<sup class="superscript">1</sup> = $1,120.00. But that same sum invested for the same term at the same rate of interest but compounded <em class="emphasis">monthly</em> would grow to $1,000 × (1.01)<sup class="superscript">12</sup> = $1,126.83 because the interest paid each month is capitalized, earning interest at 12 percent. Note that we represent <em class="emphasis">i</em> as the interest paid <em class="emphasis">per period</em> (.12 interest/12 months in a year = .01) and <em class="emphasis">n</em> as the number of periods (12 in a year; 12 × 1 = 12), rather than the number of years. That same sum, and so forth with interest compounded quarterly (4 times a year) would grow to $1,000 × (1.03)<sup class="superscript">4</sup> = $1,125.51. The differences among annual, monthly, and quarterly compounding here are fairly trivial, amounting to less than $7 all told, but are important for bigger sums, higher interest rates, more frequent compounding periods, and longer terms. One million dollars at 4 percent for a year compounded annually comes to $1,000,000 × (1.04) = $1,040,000, while on the same terms compounded quarterly, it produces $1,000,000 × (1.01)<sup class="superscript">4</sup> = $1,040,604.01. (I’ll take the latter sum over the former any day and “invest” the surplus in a very nice dinner and concert tickets.) Likewise, $100 at 300 percent interest for 5 years compounded annually becomes 100 × (4)<sup class="superscript">5</sup> = $102,400. Compounded quarterly, that $100 grows to $100 × (1.75)<sup class="superscript">20</sup> = $7,257,064.34! A mere $1 at 6 percent compounded annually for 100 years will be worth $1 × (1.06)<sup class="superscript">100</sup> = $339.30. The same buck at the same interest compounded monthly swells in a century to $1 × (1.005)<sup class="superscript">1200</sup> = $397.44. <em class="emphasis">This all makes good sense because interest is being received sooner than the end of the year and hence is more valuable because, as we know, money now is better than money later</em>.</p>
+    <p class="para editable block" id="wright-ch04_s03_p02">Do a few exercises now to make sure you get it.</p>
+    <div class="exercises editable block" id="wright-ch04_s03_n02">
+        <h3 class="title">Exercises</h3>
+        <p class="para" id="wright-ch04_s03_p03">For all questions in this set, interest rates are stated in annual terms, but the interest compounds quarterly (four times a year). Also, assume there are no transaction fees, defaults, etc.</p>
+        <ol class="orderedlist" id="wright-ch04_s03_l02">
+            <li>On your seventieth birthday, you learn that your grandma, bless her soul, deposited $50.00 for you on the day of your birth in a savings account bearing 5 percent interest. How much is in the account? </li>
+            <li>You won $1 million in the lottery but unfortunately the money is payable in a year and you want to start spending it right away. If interest is at 8 percent, how much can you receive today in exchange for that $1 million in year? </li>
+            <li>As a freshman, you hoped to save $2,500 to “pimp your ride” as a college graduation present to yourself. You put $2,012.98 from your high school graduation haul in the bank at 5 percent interest. Will you meet your goal if you graduate in four years? </li>
+            <li>You’ve won a scholarship for your senior year worth $1,500, but it is payable only after graduation, a year hence. If interest is at 15 percent, how much is your scholarship worth today? </li>
+            <li>You won the lottery and netted a million bucks, but you need $5 million to buy a little island that you have had your eye on. If interest is at 12 percent, will you be able to buy your island in 30 years, assuming its price is unchanged at that time?</li>
+        </ol>
+    </div>
+    <div class="key_takeaways editable block" id="wright-ch04_s03_n03">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="wright-ch04_s03_l03">
+            <li>Present and future value can be calculated for any compounding period (except continuously) using the same formulas presented in this chapter.</li>
+            <li>Care must be taken, however, to ensure that the <em class="emphasis">i</em> and <em class="emphasis">n</em> terms are adjusted appropriately.</li>
+        </ul>
+    </div>
+</div>
+<div class="section" id="wright-ch04_s04" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.4</span> Pricing Debt Instruments</h2>
+    <div class="learning_objectives editable block" id="wright-ch04_s04_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="wright-ch04_s04_l01">
+            <li>What are debt instruments and how are they priced?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright_1.1-5066-20111011-140542-125188"><em class="emphasis">Believe it or not, you are now equipped to calculate the price of any</em> <span class="margin_term"><a class="glossterm">debt instrument</a><span class="glossdef">A bond, IOU, or other contract (like a discount bond, simple loan, fixed payment loan, or coupon bond) promising the payment of money in the future.</span></span> <em class="emphasis">or contract provided you know the rate of interest, compounding period, and the size and timing of the payments</em>. Four major types of instruments that you are likely to encounter include discount bonds, simple loans, fixed-payment loans, and coupon bonds.</p>
+    <p class="para editable block" id="wright_1.1-5066-20111011-135532-341108">A <span class="margin_term"><a class="glossterm">discount bond</a><span class="glossdef">A debt instrument that makes only one payment, its face value on its maturity or redemption date. Also known as a zero coupon bond.</span></span> (aka a <span class="margin_term"><a class="glossterm">zero coupon bond</a><span class="glossdef"><em class="emphasis">See</em> discount bond.</span></span> or simply a <span class="margin_term"><a class="glossterm">zero</a><span class="glossdef"><em class="emphasis">See</em> discount bond.</span></span>) makes only one payment, its face value on its maturity or redemption date, so its price is easily calculated using the present value formula. If the interest rate is 6 percent, the price of a discount bond with a $1,000 face value due in exactly a year would be $943.40 (1000/1.06). If the interest rate is 12 percent, the same discount bond’s price would be only $892.86 (1000/1.12). If the bond is due in two years at 12 percent, its price would be $797.19 (1000/(1.12<sup class="superscript">2</sup>), and so forth.</p>
+    <p class="para editable block" id="wright_1.1-5066-20111011-135950-366102">A <span class="margin_term"><a class="glossterm">simple loan</a><span class="glossdef">A debt instrument where the borrower repays the principal and interest at the end of the loan.</span></span> is the name for a loan where the borrower repays the principal and interest at the end of the loan. Use the future value formula to calculate the sum due upon maturity. For example, a simple loan of $1,000 for one year at 3.5 percent would require the borrower to repay $1,035.00 (1000× 1.035), while a simple loan at the same rate for two years would require a payment of $1,071.23 (1000 × 1.035<sup class="superscript">2</sup>). (Note that the correct answer is not just $35 doubled due to the effects of compounding or capitalizing the interest due at the end of the first year.)</p>
+    <p class="para editable block" id="wright_1.1-5066-20111011-135950-366160">A <span class="margin_term"><a class="glossterm">fixed-payment loan</a><span class="glossdef">A debt instrument in which the borrower makes periodic repayments of principal and interest.</span></span> (aka a fully amortized loan) is one in which the borrower periodically (for example, weekly, bimonthly, monthly, quarterly, annually, etc.) repays a portion of the principal along with the interest. With such loans, which include most auto loans and home mortgages, all payments are equal. There is no big balloon or principal payment at the end because the principal shrinks, slowly at first but more rapidly as the final payment grows nearer, as in <a class="xref" href="#wright-ch04_s04_f01">Figure 4.2 "Sample thirty-year amortizing mortgage"</a>.</p>
+    <p class="para editable block" id="wright-ch04_s04_p02">Principal borrowed: $500,000.00; Annual number of payments: 12; Total number of payments: 360; Annual interest rate: 6.00%; Regular monthly payment amount: $2,997.75</p>
+    <div class="figure large editable block" id="wright-ch04_s04_f01">
+        <p class="title"><span class="title-prefix">Figure 4.2</span> Sample thirty-year amortizing mortgage</p>
+        <img src="section_07/536325aa15948464dd767e52953a8ce4.jpg">
+    </div>
+    <p class="para editable block" id="wright-ch04_s04_p03">Today, such schedules are most easily created using specialized financial software, including Web sites like <a class="link" href="http://ray.met.fsu.edu/cgi-bin/amortize">http://ray.met.fsu.edu/cgi-bin/amortize</a>, <a class="link" href="http://www.yona.com/loan/">http://www.yona.com/loan/</a>, or <a class="link" href="http://realestate.yahoo.com/calculators/amortization.html">http://realestate.yahoo.com/calculators/amortization.html</a>. If you wanted to buy this mortgage (in other words, if you wanted to purchase the right to receive the monthly repayments of $2,997.75) from the original lender (there are still secondary markets for mortgages, though they are less active than they were before the financial crisis that began in 2007), you’d simply sum the present value of each of the remaining monthly payments. (Again, a computer is highly recommended here!)</p>
+    <p class="para editable block" id="wright-ch04_s04_p04"><em class="emphasis">Finally, a</em> <span class="margin_term"><a class="glossterm">coupon bond</a><span class="glossdef">A debt instrument that makes interest payments periodically until its maturity or redemption date, when the final interest payment and the principal are to be paid.</span></span> <em class="emphasis"> is so-called because, in the past, owners of the bond received interest payments by clipping one of the coupons and remitting it to the borrower (or its paying agent, usually a bank)</em>. <a class="xref" href="#wright-ch04_s04_f02">Figure 4.3 "Sample bond coupon, Malden &amp; Melrose Railroad Co., 1860"</a>, for example, is a coupon paid (note the cancellation holes and stamp) to satisfy six months’ interest on bond number 21 of the Malden &amp; Melrose Railroad Company of Boston, Massachusetts, sometime on or after April 1, 1863. <a class="xref" href="#wright-ch04_s04_f03">Figure 4.4 "Michigan Central Railroad, 3.5 percent bearer gold bond with coupons attached, 1902"</a> is a $1,000 par value coupon bond issued in 1902, with some of the coupons still attached (on the left side of the figure).</p>
+    <div class="figure small editable block" id="wright-ch04_s04_f02">
+        <p class="title"><span class="title-prefix">Figure 4.3</span> Sample bond coupon, Malden &amp; Melrose Railroad Co., 1860</p>
+        <img src="section_07/49fe772b99b73989291f5fea6ed7e212.jpg">
+        <div class="copyright">
+            <p class="para">Courtesy of CelebrateBoston.com</p>
+        </div>
+    </div>
+    <div class="figure small editable block" id="wright-ch04_s04_f03">
+        <p class="title"><span class="title-prefix">Figure 4.4</span> Michigan Central Railroad, 3.5 percent bearer gold bond with coupons attached, 1902</p>
+        <img src="section_07/5dc7cf3b988709d269e61bd1aaa93ec3.jpg">
+        <div class="copyright">
+            <p class="para">Museum of American Finance</p>
+        </div>
+    </div>
+    <p class="para editable block" id="wright-ch04_s04_p05">Even if it no longer uses a physical coupon like those illustrated in <a class="xref" href="#wright-ch04_s04_f02">Figure 4.3 "Sample bond coupon, Malden &amp; Melrose Railroad Co., 1860"</a> and <a class="xref" href="#wright-ch04_s04_f03">Figure 4.4 "Michigan Central Railroad, 3.5 percent bearer gold bond with coupons attached, 1902"</a>, a coupon bond makes one or more interest payments periodically (for example, monthly, quarterly, semiannually, annually, etc.) until its maturity or redemption date, when the final interest payment and all of the principal are paid. <em class="emphasis">The sum of the present values of each future payment will give you the price</em>. So we can calculate the price today of a $10,000 face or par value coupon bond that pays 5 percent interest annually until its face value is redeemed (its principal is repaid) in exactly five years if the market rate of interest is 6 percent, 4 percent, or any other percent for that matter, simply by summing the present value of each payment:</p>
+    <p class="para editable block" id="wright-ch04_s04_p06">PV<sub class="subscript">1</sub> = $500/(1.06) = $471.70 (This is the interest payment after the first year. The $500 is the <span class="margin_term"><a class="glossterm">coupon</a><span class="glossdef">The interest rate promised to the owner of a coupon bond.</span></span> or interest payment, which is calculated by multiplying the bond’s face value, in this case, $10,000, by the bond’s contractual rate of interest or “coupon rate,” in this case, 5 percent. $10,000 × .05 = $500.)</p>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m001" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>2</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.06</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>2</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>445.00</mn>
+						<mtext> (If this doesn’t look familiar, you didn’t do Exercise 1 enough!)</mtext>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m002" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>3</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.06</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>3</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>419.81</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m003" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>4</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.06</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>4</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>396.05</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m004" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>5</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>10,500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.06</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>5</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>7,846.21</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m005" display="block">
+					<mrow>
+						<mtext> ($10,500 is the final interest payment of $500 plus the repayment of the bond’s face value of $10,000</mtext>
+						<mtext>.)</mtext>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s04_p07">That adds up to $9,578.77. If you are wondering why the bond is worth less than its face value, the key is the difference between the contractual interest or coupon rate it pays, 5 percent, and the market rate of interest, 6 percent. <em class="emphasis">Because the bond pays at a rate lower than the going market, people are not willing to pay as much for it, so its price sinks below par</em>. By the same reasoning, people should be willing to pay more than the face value for this bond if interest rates sink below its coupon rate of 5 percent. Indeed, when the market rate of interest is 4 percent, its price is $10,445.18 (give or take a few pennies, depending on rounding):</p>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m006" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>1</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<mo stretchy="false">(</mo>
+						<mn>1.04</mn>
+						<mo stretchy="false">)</mo>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>480.77</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m007" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>2</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.04</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>2</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>462.28</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m008" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>3</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.04</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>3</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>444.50</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m009" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>4</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.04</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>4</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>427.40</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m010" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>5</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>10,500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.04</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>5</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>8,630.23</mn>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s04_p08">If the market interest rate is exactly equal to the coupon rate, the bond will sell at its par value, in this case, $10,000.00. Check it out:</p>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m011" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>1</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<mo stretchy="false">(</mo>
+						<mn>1.05</mn>
+						<mo stretchy="false">)</mo>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>476.1905</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m012" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>2</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.05</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>2</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>453.5147</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m013" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>3</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.05</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>3</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>431.9188</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m014" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>4</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.05</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>4</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>411.3512</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="wright-ch04_s04_m015" display="block">
+					<mrow>
+						<mi>P</mi>
+						<msub>
+							<mi>V</mi>
+							<mn>5</mn>
+						</msub>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>10,500</mn>
+						<mo>/</mo>
+						<msup>
+							<mrow>
+								<mo stretchy="false">(</mo>
+								<mn>1.05</mn>
+								<mo stretchy="false">)</mo>
+							</mrow>
+							<mn>5</mn>
+						</msup>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>8,227.0247</mn>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s04_p09">Calculating the price of a bond that makes quarterly payments over thirty years can become quite tedious because, by the method shown above, that would entail calculating the PV of 120 (30 years times 4 payments a year) payments. Until not too long ago, people used special bond tables to help them make the calculations more quickly. <em class="emphasis">Today, to speed things up and depending on their needs, most people use financial calculators, specialized financial software, and canned spreadsheet functions like Excel’s PRICEDISC or PRICEMAT, custom spreadsheet formulas, or Web-based calculators</em> like <a class="link" href="http://www.calculatorweb.com/calculators/bondcalc.shtml">http://www.calculatorweb.com/calculators/bondcalc.shtml</a> or <a class="link" href="http://www.investinginbonds.com/calcs/tipscalculator/TipsCalcForm.aspx">http://www.investinginbonds.com/calcs/tipscalculator/TipsCalcForm.aspx</a>.</p>
+    <p class="para editable block" id="wright_1.1-5066-20111011-141839-344931">It’s time once again to get a little practice. Don’t worry; these are easy enough to work out on your own.</p>
+    <div class="exercises editable block" id="wright-ch04_s04_n02">
+        <h3 class="title">Exercises</h3>
+        <p class="para" id="wright-ch04_s04_p10">Assume no default risks or transaction costs.</p>
+        <ol class="orderedlist" id="wright-ch04_s04_l02">
+            <li>What is the price of a 10 percent coupon bond, payable annually, with a $100 face value that matures in 3 years if interest rates are 7 percent? </li>
+            <li>What is the price of a 5 percent coupon bond, payable annually, with a $1,000 face value that matures in 5 years if interest rates are 5 percent?</li>
+            <li>If interest rates were 4 percent, how much would you give today for a loan with a $100,000 balloon principal payment due in a year and that will pay $16,000 in interest at the end of each quarter, including the final quarter when the principal falls due? </li>
+            <li>What is the value today of a share of stock that you think will be worth $50 in a year and that throws off $1 in dividends each quarter until then, assuming the market interest rate is 10 percent? </li>
+            <li>What is the value today of a share of stock that you think will be worth $50 in a year and that throws off $1 in dividends each quarter until then if the market interest rate is 1 percent? </li>
+        </ol>
+    </div>
+    <div class="key_takeaways editable block" id="wright-ch04_s04_n03">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="wright-ch04_s04_l03">
+            <li>Debt instruments—like discount bonds, simple loans, fixed payment loans, and coupon bonds—are contracts that promise payment in the future.</li>
+            <li>They are priced by calculating the sum of the present value of the promised payments.</li>
+        </ul>
+    </div>
+</div>
+<div class="section" id="wright-ch04_s05" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.5</span> What’s the Yield on That?</h2>
+    <div class="learning_objectives editable block" id="wright-ch04_s05_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="wright-ch04_s05_l01">
+            <li>What is yield to maturity and for what types of financial instruments is the yield to maturity relatively easy to calculate?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright-ch04_s05_p01">Thus far, we have assumed or been given a market interest rate and then calculated the price (PV) of the instrument. Or, given the PV and an interest rate, we’ve calculated the FV. <em class="emphasis">Sometimes it is useful to do the opposite, to calculate the interest rate, or yield to maturity, if given the PV and FV</em>. Say that you know that someone paid $750 for a zero coupon bond with a face value of $1,000 that will mature in exactly a year and you want to know what interest rate he or she paid. You know that PV = FV/(1 + i). Solving for i:</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m001" display="block">
+					<mrow>
+						<mtext>Multiply each side of the equation by </mtext>
+						<mo stretchy="false">(</mo>
+						<mn>1</mn>
+						<mo>+</mo>
+						<mi>i</mi>
+						<mo stretchy="false">)</mo>
+						<mo>:</mo>
+						<mo stretchy="false">(</mo>
+						<mn>1</mn>
+						<mo>+</mo>
+						<mi>i</mi>
+						<mo stretchy="false">)</mo>
+						<mo>×</mo>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>=</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m002" display="block">
+					<mrow>
+						<mtext>Multiply the terms on the left side of the equation: </mtext>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>+</mo>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mi>i</mi>
+						<mo>=</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m003" display="block">
+					<mrow>
+						<mtext>Subtract PV from each side of the equation: </mtext>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mi>i</mi>
+						<mo>=</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+						<mo>-</mo>
+						<mi>P</mi>
+						<mi>V</mi>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m004" display="block">
+					<mrow>
+						<mtext>Divide each side of the equation by </mtext>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>:</mo>
+						<mi>i</mi>
+						<mo>=</mo>
+						<mo stretchy="false">(</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+						<mo>-</mo>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo stretchy="false">)</mo>
+						<mo>/</mo>
+						<mi>P</mi>
+						<mi>V</mi>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m005" display="block">
+					<mrow>
+						<mtext>So in this case </mtext>
+						<mi>i</mi>
+						<mo>=</mo>
+						<mo stretchy="false">(</mo>
+						<mn>1000</mn>
+						<mo>-</mo>
+						<mn>750</mn>
+						<mo stretchy="false">)</mo>
+						<mo>/</mo>
+						<mn>750</mn>
+						<mo>=</mo>
+						<mn>250</mn>
+						<mo>/</mo>
+						<mn>750</mn>
+						<mo>=</mo>
+						<mn>.3333</mn>
+						<mo>,</mo>
+						<mtext> or </mtext>
+						<mn>33.33</mn>
+						<mtext> percent</mtext>
+						<mtext>.</mtext>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s05_p02">You can check your work by reversing the problem—that is, asking how much you’d pay today for $1,000 in a year if interest was at 33.33 percent: PV = 1000/(1.3333333) = $750. Voilà!</p>
+    <div class="callout editable block" id="wright-ch04_s05_n02">
+        <h3 class="title">Stop and Think Box</h3>
+        <p class="para" id="wright-ch04_s05_p03">Suppose you have $1,000 to invest for a year and two ways of investing it (each equal in terms of risk and liquidity): a discount bond due in one year with a face value of $1,000 for $912 or a bank account at 6.35 percent compounded annually. Which should you take?</p>
+        <p class="para" id="wright-ch04_s05_p04">Choose the bond, which will yield 9.65 percent: (1000 − 912)/912 = .0965. To maximize your haul, invest the $88 left over from the purchase of the bond in the bank account.</p>
+    </div>
+    <p class="para editable block" id="wright-ch04_s05_p05"><em class="emphasis">Calculating the yield to maturity for a perpetual debt, one with no maturity or repayment date, like a</em> <span class="margin_term"><a class="glossterm">Consol</a><span class="glossdef">A type of perpetual bond issued by the British government.</span></span>, <em class="emphasis">ground rent, or perpetual interest-only mortgage, is also quite easy</em>. The price or PV of a perpetuity is equal to the yearly payment—the only FV available from an instrument that by definition will never repay its principal—divided by the going rate of interest:</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m006" display="block">
+					<mrow>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>=</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+						<mo>/</mo>
+						<mi>i</mi>
+						<mtext> (decimalized)</mtext>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s05_p06">So a $1,000 ground rent that pays $50 a year (a 5 percent coupon rate) would be worth $1,000 if interest rates were 5 percent, less if rates are higher, more if lower:</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m007" display="block">
+					<mrow>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>=</mo>
+						<mn>50</mn>
+						<mo>/</mo>
+						<mn>.05</mn>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>1,000</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m008" display="block">
+					<mrow>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>=</mo>
+						<mn>50</mn>
+						<mo>/</mo>
+						<mn>.10</mn>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>500</mn>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m009" display="block">
+					<mrow>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>=</mo>
+						<mn>50</mn>
+						<mo>/</mo>
+						<mn>.01</mn>
+						<mo>=</mo>
+						<mi>$</mi>
+						<mn>5,000</mn>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s05_p07">Calculating the yield to maturity of a perpetuity, if given the PV and FV, is easily done by taking the equation and solving for i:</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m010" display="block">
+					<mrow>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>=</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+						<mo>/</mo>
+						<mi>i</mi>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m011" display="block">
+					<mrow>
+						<mtext>Multiply each side by </mtext>
+						<mi>i</mi>
+						<mo>:</mo>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mi>i</mi>
+						<mo>=</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+					</mrow>
+				</math>
+</span>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s05_m012" display="block">
+					<mrow>
+						<mtext>Divided by </mtext>
+						<mi>P</mi>
+						<mi>V</mi>
+						<mo>:</mo>
+						<mi>i</mi>
+						<mo>=</mo>
+						<mi>F</mi>
+						<mi>V</mi>
+						<mo>/</mo>
+						<mi>P</mi>
+						<mi>V</mi>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s05_p08">So the yield to maturity of a ground rent that pays $60 per year and that currently sells for $600 would be 10 percent: <em class="emphasis">i</em> = 60/600 = .10 = 10%.</p>
+    <div class="callout editable block" id="wright-ch04_s05_n03">
+        <h3 class="title">Stop and Think Box</h3>
+        <p class="para" id="wright-ch04_s05_p09">A ground rent contract consummated in Philadelphia, Pennsylvania, in 1756 is still being paid today. Someone recently paid $455 for the $23.17 annual payment. What is the ground rent’s yield to maturity? If the interest rate rises to 10 percent, how much will the ground rent be worth? What if interest falls to 2 percent?</p>
+        <p class="para" id="wright-ch04_s05_p10"><em class="emphasis">i</em> = C/P so <em class="emphasis">i</em> = 23.17/455 = 0.05092 = 5.09%; PV = 23.17/.1 = $231.70; PV = 23.17/.02 = $1,158.50.</p>
+    </div>
+    <p class="para editable block" id="wright-ch04_s05_p11">Calculating yield to maturity for coupon bonds and fixed-payment loans, however, is mathematically nasty business without a computer or bond table. In the past, people used to estimate the yield to maturity on such instruments by pretending they were perpetuities or engaging in trial-and-error interpolation. In the first method, you use the easy perpetuity equation above (<em class="emphasis">i</em> = FV/PV) to get a quick estimate called the <span class="margin_term"><a class="glossterm">current yield</a><span class="glossdef">A quick (<em class="emphasis">i</em> = FV/PV) but flawed method for calculating interest rates of nonperpetual debt.</span></span>. <em class="emphasis">Unfortunately, current yield can be wide of the mark, especially for bonds with maturities less than twenty years and bonds whose prices are far from their par value</em>.<span class="footnote" id="fwk-wright-fn04_004">Current yield is simply the yield to maturity of a perpetuity, so the more like a perpetuity a bond is, the better the current yield will approximate its yield to maturity. The shorter the maturity of a bond, the less like a Consol it is, so the less accurate the current yield formula will be. Similarly, the current yield works better the closer a bond’s price is to par because yield to maturity equals the coupon rate when the bond is at par. As the price deviates further from par, the less well the current yield can approximate the yield to maturity.</span> In the second method, one backs into the yield to maturity by making successive guesses about <em class="emphasis">i</em> and plugging them into the PV formula. Not fun, but you’ll eventually get there. Most people today therefore use a financial calculator, spreadsheet, or Web-based utility rather than such erroneous (current yield) or laborious (interpolation) processes. You should be able to calculate the yield to maturity of one-year discount bonds or perpetuities by hand, or at worst with the aid of simple (nonfinancial) calculator. Here is a little practice.</p>
+    <div class="exercises editable block" id="wright-ch04_s05_n04">
+        <h3 class="title">Exercises</h3>
+        <ol class="orderedlist" id="wright-ch04_s05_l02">
+            <li>A $100 bond payable in a year sells for $97.56. What is the yield to maturity? </li>
+            <li>Sam promises to pay Joe $1,904 in a year if Joe gives him $1,498 today. What interest rate is Sam paying and what interest rate Joe is earning? </li>
+            <li>Every year, the U.S. government pays a certain Indian tribe $10,000 and, by terms of its treaty with that tribe, must do so forever. Mr. Trump offered to purchase the right to receive that stream for a one-time payment of $143,500. What yield to maturity did Trump offer the Indians? </li>
+            <li>What is the yield to maturity of a British Consol paying £400 per year that sold for £27,653? </li>
+        </ol>
+    </div>
+    <div class="key_takeaways editable block" id="wright-ch04_s05_n05">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="wright-ch04_s05_l03">
+            <li>Yield to maturity is the most economically accurate way of measuring nominal interest rates.</li>
+            <li>It is easily calculated for one-year discount bonds <em class="emphasis">i</em> = (FV–PV)/PV and perpetuities <em class="emphasis">i</em> = C/PV where C is the coupon or annual payment.</li>
+        </ul>
+    </div>
+</div>
+<div class="section" id="wright-ch04_s06" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.6</span> Calculating Returns</h2>
+    <div class="learning_objectives editable block" id="wright-ch04_s06_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="wright-ch04_s06_l01">
+            <li>What is the rate of return and how does it differ from yield to maturity?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright-ch04_s06_p01"><em class="emphasis">The information provided in this chapter is not all you need to know about bonds if you were to become a bond trader because the bond market, which in the United States is over 200 years old, has some odd conventions that do not make much economic sense</em>. Most students will not become professional bond traders, so in the interest of sanity, yours and ours, we will not delve into the intricacies here. (If you do become a bond trader, you will quickly and easily pick up on the conventions anyway.) Our goal here is to understand the basics of PV, FV, yield to maturity (YTM), and, finally, <span class="margin_term"><a class="glossterm">return</a><span class="glossdef">A measure of the profitability of an investment that takes into account changes in the value of the bond or other asset.</span></span>. Students sometimes conflate the last two concepts. <em class="emphasis">The yield to maturity is merely a measure of the interest rate. Return is more a measure of how lucrative an investment is because it accounts for changes in the price of the bond</em> (or other asset, financial or otherwise) <em class="emphasis">over some period</em>. More formally,</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s06_m001" display="block">
+					<mrow>
+						<mi>R</mi>
+						<mo>=</mo>
+						<mo stretchy="false">(</mo>
+						<mi>C</mi>
+						<mo>+</mo>
+						<msub>
+							<mi>P</mi>
+							<mrow>
+								<mi>t</mi>
+								<mn>1</mn>
+							</mrow>
+						</msub>
+						<mo>-</mo>
+						<msub>
+							<mi>P</mi>
+							<mrow>
+								<mi>t</mi>
+								<mn>0</mn>
+							</mrow>
+						</msub>
+						<mo stretchy="false">)</mo>
+						<mo>/</mo>
+						<msub>
+							<mi>P</mi>
+							<mrow>
+								<mi>t</mi>
+								<mn>0</mn>
+							</mrow>
+						</msub>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s06_p02">where:</p>
+    <p class="para editable block" id="wright-ch04_s06_p03">R = return from holding the asset for some time period, t<sub class="subscript">0</sub> to t<sub class="subscript">1</sub></p>
+    <p class="para editable block" id="wright-ch04_s06_p04">P<sub class="subscript">t0</sub> = the price at time t<sub class="subscript">0</sub> (this can also be thought of as the purchase price)</p>
+    <p class="para editable block" id="wright-ch04_s06_p05">P<sub class="subscript">t1</sub> = the price at time t<sub class="subscript">1</sub> (this can also be thought of as the sale or going market price)</p>
+    <p class="para editable block" id="wright-ch04_s06_p06">C = coupon (or other) payment</p>
+    <p class="para editable block" id="wright-ch04_s06_p07">So imagine you purchased a 5 percent coupon bond with a $100 face value that matures in three years when the interest rate is 5 percent. As we learned above, the market price of such a bond would equal its face value, or $100. <em class="emphasis">We also learned that bond prices and interest rates are inversely related</em>. As the market interest rate increases, the PV of the bond’s future payments decreases and the bond becomes less valuable. As the rate decreases, the PV of future payments increases and the bond becomes more valuable. If the interest rate increased (decreased) to 6 (4) percent, the value of the bond would decrease (increase), so the returns you earned on the bond would not equal the yield to maturity. For example, suppose you purchased the bond for $100 but its price a year hence stood at $103 because interest rates decreased a little. Your return would be R = (5 + 3)/100 = .08, or 8%. But if in the next year, interest rates soared, driving the market price of the bond down to $65, your return (from purchase) would be R = (10 − 35)/100 = −.25 or negative 25%. Yes, negative. <em class="emphasis">It is quite possible to lose wealth by investing in bonds or other fixed-rate financial instruments, even if there is no default</em> (i.e., even if payments are punctually made as promised). Similarly, if you purchased $1 million worth of municipal bonds that paid coupons of $50,000 annually, your return would not be a simple 5 percent because the market price of the bonds may have gone up or down in the first year. If the bonds lost $100,000 in market value, your return would be a negative 5 percent: R = (50,000 – 100,000)/1,000,000 = −.05. If they gained $100,000, by contrast, your return would be 15 percent: R = (50,000 + 100,000)/1,000,000 = .15. If the bonds gained $100,000 over two years, the total return would be 20 percent because two coupon payments would have been made too: R = (100,000 + 100,000)/1,000,000 = .20.</p>
+    <div class="callout editable block" id="wright-ch04_s06_n02">
+        <h3 class="title">Stop and Think Box</h3>
+        <p class="para" id="wright-ch04_s06_p08">As part of its effort to repay the large debts it accrued during the Revolutionary War, the U.S. federal government in the early 1790s issued three types of bonds: a coupon bond that paid 6 percent per year, a coupon bond that paid 3 percent per year, and a zero coupon bond that became a 6 percent coupon bond in 1801. For most of the 1790s and early 1800s, the price of the 6 percent bonds hovered around par. Given that information, what was the yield to maturity on government debt in that period? What, in general terms, were the prices of the 3 percent and zero coupon bonds?</p>
+        <p class="para" id="wright-ch04_s06_p09">The yield to maturity was about 6 percent because the 6 percent coupon bonds traded at around par. The price of the 3 percent coupon bonds must have been well below par because who would pay $100 to get $3 a year when she could pay $100 and get $6 a year? Finally, the zeroes must have appreciated toward the price of the 6 percent coupon bonds as the conversion date neared.</p>
+    </div>
+    <p class="para editable block" id="wright-ch04_s06_p10"><em class="emphasis">Note that a capital loss or gain is not, repeat not, predicated on actually selling the bond or other asset</em>. One way to think about this is that the rate of return formula merely calculates the return <em class="emphasis">if</em> the bond were to be sold. Another way to think about it is to realize that whether the bond is sold or not, its owner is still poorer (richer) by the amount of the loss (gain) because the value of his assets, and hence his net worth, has shrunk (increased) by that amount. The risk of such loss or gain is known as <span class="margin_term"><a class="glossterm">interest rate risk</a><span class="glossdef">The risk that the market price of a bond or other debt instrument will decrease due to increases in the interest rate.</span></span> to distinguish it from other types of risks, like <span class="margin_term"><a class="glossterm">default risk</a><span class="glossdef">The risk that a bond or other debt instrument will not make the promised payments.</span></span> (the risk of nonpayment). Interest rate risk is higher the longer the maturity of a bond because more FVs are affected by increasing the interest rate, and the most distant ones are the most highly affected. Check this out: The PV of $1,000 in 10 years at 5% compounded annually is 1,000/(1.05)<sup class="superscript">10</sup> = $613.91. At 10% it is 1,000/(1.10)<sup class="superscript">10</sup> = $385.54, a loss of 37.2%. The PV of $1,000 in 30 years at 5% and 10% is 1,000/(1.05)<sup class="superscript">30</sup> = $231.38 and 1,000/(1.10)<sup class="superscript">30</sup> = $57.31, respectively, a loss of 75.23 percent. Duration is a technical measure of interest rate risk that we will not investigate here, where the main point is merely that rising interest rates hurt bond prices (and hence bondholders); falling interest rates help bond prices.</p>
+    <div class="key_takeaways editable block" id="wright-ch04_s06_n03">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="wright-ch04_s06_l02">
+            <li>The rate of return accounts for changes in the market price of a bond or other asset while the yield to maturity does not.</li>
+            <li>Yield to maturity (YTM) is almost always positive but returns are often negative due to interest rate risk, the risk that interest rates will rise, depressing bond prices.</li>
+            <li>When the market interest rate increases, bond prices decrease because the opportunity cost of lending money has increased, making bonds less attractive investments unless their price falls.</li>
+            <li>Algebraically, PV = FV/(1 + i)<sup class="superscript">n</sup>. The interest rate is in the denominator, so as <em class="emphasis">i</em> gets bigger, PV must get smaller.</li>
+            <li>Bonds with longer periods to maturity have more volatile prices, ceteris paribus, because the PV of their distant FV shrinks more, to very small sums.</li>
+        </ul>
+    </div>
+</div>
+<div class="section" id="wright-ch04_s07" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.7</span> Inflation and Interest Rates</h2>
+    <div class="learning_objectives editable block" id="wright-ch04_s07_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="wright-ch04_s07_l01">
+            <li>What is the difference between real and nominal interest rates and why is the distinction important?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright-ch04_s07_p01">You might well ask at this point, What factors change interest rates? One big factor is inflation. As the price level rises, so too do interest rates, or at least what economists call nominal interest rates, the type of rates we’ve discussed so far. <em class="emphasis">If nominal rates do not increase (and they often don’t, or can’t), lenders might receive more nominal dollars than they lent but actually get back less purchasing power</em>. Imagine, for example, that you lent $100 for one year at 6 percent interest when a loaf of bread, pack of chewing gum, and two-liter bottle of Mountain Dew each cost $1. At the end of the simple loan, you would get back $100 × 1.06 = $106 and be able to enjoy an extra $6 of goods, say, two loaves of bread, two packs of gum, and two bottles of the caffeine and sugar rush known as Doin’ the Dew. But what if prices doubled over that year? Instead of some combination of 106 goodies, you’d be able to buy only fifty-three. Your nominal return would be positive, but your real return, what you could actually buy with the $106, would be steeply negative.</p>
+    <p class="para editable block" id="wright-ch04_s07_p02"><em class="emphasis">A simple equation, the Fisher Equation, named after Irving Fisher, the early twentieth-century U.S. economist who articulated it</em>,<span class="footnote" id="fwk-wright-fn04_005">To be frank, Benjamin Franklin and other colonists in eighteenth-century America understood it well.</span><em class="emphasis">helps us to understand the relationship between inflation and interest rates more precisely</em>:</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s07_m001" display="block">
+					<mrow>
+						<mi>i</mi>
+						<mo>=</mo>
+						<msub>
+							<mi>i</mi>
+							<mi>r</mi>
+						</msub>
+						<mo>+</mo>
+						<mi>π</mi>
+						<mtext>  or, rearranging the terms, </mtext>
+						<msub>
+							<mi>i</mi>
+							<mi>r</mi>
+						</msub>
+						<mo>=</mo>
+						<mi>i</mi>
+						<mo>-</mo>
+						<mi>π</mi>
+						<mtext> or, again rearranging the terms, </mtext>
+						<mi>π</mi>
+						<mo>=</mo>
+						<mi>i</mi>
+						<mo>-</mo>
+						<msub>
+							<mi>i</mi>
+							<mi>r</mi>
+						</msub>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s07_p03">where</p>
+    <p class="para editable block" id="wright-ch04_s07_p04">i<sub class="subscript">r</sub> = the real interest rate</p>
+    <p class="para editable block" id="wright-ch04_s07_p05"><em class="emphasis">i</em> = the nominal interest rate (the type of interest rate the first part of this chapter discussed exclusively)</p>
+    <p class="para editable block" id="wright-ch04_s07_p06">π = inflation (or expected inflation)</p>
+    <div class="figure large medium-height editable block" id="wright-ch04_s07_f01">
+        <p class="title"><span class="title-prefix">Figure 4.5</span> U.S. real interest rate, 2001–2010</p>
+        <img src="section_07/c22ca057fccb1e147813aeb719664d7c.jpg">
+    </div>
+    <p class="para editable block" id="wright-ch04_s07_p07">In plain English, after the fact (<span class="margin_term"><a class="glossterm">ex post</a><span class="glossdef">After the fact.</span></span> in economists’ lingo), the nominal interest rate is equal to the real interest rate plus actual inflation. Before the fact (<span class="margin_term"><a class="glossterm">ex ante</a><span class="glossdef">Before the fact.</span></span> in economists’ lingo), the nominal interest rate is equal to the real interest rate plus the expectation of inflation.</p>
+    <div class="callout editable block" id="wright-ch04_s07_n02">
+        <h3 class="title">Stop and Think Box</h3>
+        <p class="para" id="wright-ch04_s07_p08">In early 2007, a man had a wallet returned that he had lost over sixty years earlier in France, during World War II.<span class="footnote" id="fwk-wright-fn04_006">ABC News video, “Wallet Returned, 60 Years Later, A World War II Veteran gets his wallet returned to him sixty years later” (1/9/2007).</span> In addition to his original Social Security card and a picture of his parents, the man received an unspecified sum of cash. Was losing the wallet a good investment? Why or why not?</p>
+        <p class="para" id="wright-ch04_s07_p10">No, because the risk that it would never be returned was very high. Plus, the dollar lost a significant amount of its purchasing power over the period due to inflation and the money earned no interest. At just 3 percent compounded annually, $100 would have grown to 100 × (1.03)<sup class="superscript">60</sup> = $589.16 after 60 years. At 6 percent, $100 would have grown to 100 × (1.06)<sup class="superscript">60</sup> = $3,298.77.</p>
+        <p class="para" id="wright-ch04_s07_p09">Traditionally, inflation expectations were unobservable so real rates were known only ex post. However, relatively new and special types of bonds indexed to inflation, called Treasury Inflation Protection Securities (TIPS), provide real interest rate information, allowing market participants to observe ex ante inflation expectations. For example, if the yield to maturity on a regular, nonindexed ten-year Treasury bond is 5 percent, and the yield on the ten-year TIPS is 2 percent, the inflation expectation, via the Fisher Equation π = <em class="emphasis">i</em> − i<sub class="subscript">r</sub>, is 5 −2 = 3 percent. <a class="xref" href="#wright-ch04_s07_f01">Figure 4.5 "U.S. real interest rate, 2001–2010"</a> shows how inflation expectations have waxed and waned since the introduction of TIPS in 1997.</p>
+    </div>
+    <div class="key_takeaways editable block" id="wright-ch04_s07_n03">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="wright-ch04_s07_l02">
+            <li>The difference between the real and the nominal interest rate is literally inflation or inflation expectations.</li>
+            <li>According to the Fisher Equation, nominal interest equals real interest plus inflation (or inflation expectations), or real interest equals nominal interest minus inflation (expectations).</li>
+            <li>If actual inflation exceeds inflation expectations, real ex post (inflation-adjusted, after the fact) returns on bonds can be negative.</li>
+        </ul>
+    </div>
+</div>
+<div class="section" id="wright-ch04_s08" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.8</span> Suggested Reading</h2>
+    <p class="para editable block" id="wright-ch04_s08_p01"></p>
+    <p class="para editable block" id="wright-ch04_s08_p02">Fisher, Irving. <em class="emphasis">The Purchasing Power of Money: Its Determination and Relation to Credit Interest and Crises</em>. New York: Cosimo Classics, 2006.</p>
+    <p class="para editable block" id="wright-ch04_s08_p03">Strumeyer, Gary. <em class="emphasis">Investing in Fixed Income Securities: Understanding the Bond Market</em>. Hoboken, NJ: John Wiley and Sons, 2005.</p>
+    <p class="para editable block" id="wright-ch04_s08_p04">Wild, Russell. <em class="emphasis">Bond Investing for Dummies</em>. Hoboken, NJ: John Wiley and Sons, 2007.</p>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s06-money.html"><img src="shared/images/batch-left.png"></a> <a href="s06-money.html">Previous Chapter</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s08-the-economics-of-interest-rate.html">Next Chapter</a> <a href="s08-the-economics-of-interest-rate.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

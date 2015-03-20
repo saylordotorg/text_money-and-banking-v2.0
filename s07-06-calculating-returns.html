@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Calculating Returns</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s07-05-what-s-the-yield-on-that.html"><img src="shared/images/batch-left.png"></a> <a href="s07-05-what-s-the-yield-on-that.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s07-07-inflation-and-interest-rates.html">Next Section</a> <a href="s07-07-inflation-and-interest-rates.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="wright-ch04_s06" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.6</span> Calculating Returns</h2>
+    <div class="learning_objectives editable block" id="wright-ch04_s06_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="wright-ch04_s06_l01">
+            <li>What is the rate of return and how does it differ from yield to maturity?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="wright-ch04_s06_p01"><em class="emphasis">The information provided in this chapter is not all you need to know about bonds if you were to become a bond trader because the bond market, which in the United States is over 200 years old, has some odd conventions that do not make much economic sense</em>. Most students will not become professional bond traders, so in the interest of sanity, yours and ours, we will not delve into the intricacies here. (If you do become a bond trader, you will quickly and easily pick up on the conventions anyway.) Our goal here is to understand the basics of PV, FV, yield to maturity (YTM), and, finally, <span class="margin_term"><a class="glossterm">return</a><span class="glossdef">A measure of the profitability of an investment that takes into account changes in the value of the bond or other asset.</span></span>. Students sometimes conflate the last two concepts. <em class="emphasis">The yield to maturity is merely a measure of the interest rate. Return is more a measure of how lucrative an investment is because it accounts for changes in the price of the bond</em> (or other asset, financial or otherwise) <em class="emphasis">over some period</em>. More formally,</p>
+    <span class="informalequation block">
+				<math xml:id="wright-ch04_s06_m001" display="block">
+					<mrow>
+						<mi>R</mi>
+						<mo>=</mo>
+						<mo stretchy="false">(</mo>
+						<mi>C</mi>
+						<mo>+</mo>
+						<msub>
+							<mi>P</mi>
+							<mrow>
+								<mi>t</mi>
+								<mn>1</mn>
+							</mrow>
+						</msub>
+						<mo>-</mo>
+						<msub>
+							<mi>P</mi>
+							<mrow>
+								<mi>t</mi>
+								<mn>0</mn>
+							</mrow>
+						</msub>
+						<mo stretchy="false">)</mo>
+						<mo>/</mo>
+						<msub>
+							<mi>P</mi>
+							<mrow>
+								<mi>t</mi>
+								<mn>0</mn>
+							</mrow>
+						</msub>
+					</mrow>
+				</math>
+</span>
+    <p class="para editable block" id="wright-ch04_s06_p02">where:</p>
+    <p class="para editable block" id="wright-ch04_s06_p03">R = return from holding the asset for some time period, t<sub class="subscript">0</sub> to t<sub class="subscript">1</sub></p>
+    <p class="para editable block" id="wright-ch04_s06_p04">P<sub class="subscript">t0</sub> = the price at time t<sub class="subscript">0</sub> (this can also be thought of as the purchase price)</p>
+    <p class="para editable block" id="wright-ch04_s06_p05">P<sub class="subscript">t1</sub> = the price at time t<sub class="subscript">1</sub> (this can also be thought of as the sale or going market price)</p>
+    <p class="para editable block" id="wright-ch04_s06_p06">C = coupon (or other) payment</p>
+    <p class="para editable block" id="wright-ch04_s06_p07">So imagine you purchased a 5 percent coupon bond with a $100 face value that matures in three years when the interest rate is 5 percent. As we learned above, the market price of such a bond would equal its face value, or $100. <em class="emphasis">We also learned that bond prices and interest rates are inversely related</em>. As the market interest rate increases, the PV of the bond’s future payments decreases and the bond becomes less valuable. As the rate decreases, the PV of future payments increases and the bond becomes more valuable. If the interest rate increased (decreased) to 6 (4) percent, the value of the bond would decrease (increase), so the returns you earned on the bond would not equal the yield to maturity. For example, suppose you purchased the bond for $100 but its price a year hence stood at $103 because interest rates decreased a little. Your return would be R = (5 + 3)/100 = .08, or 8%. But if in the next year, interest rates soared, driving the market price of the bond down to $65, your return (from purchase) would be R = (10 − 35)/100 = −.25 or negative 25%. Yes, negative. <em class="emphasis">It is quite possible to lose wealth by investing in bonds or other fixed-rate financial instruments, even if there is no default</em> (i.e., even if payments are punctually made as promised). Similarly, if you purchased $1 million worth of municipal bonds that paid coupons of $50,000 annually, your return would not be a simple 5 percent because the market price of the bonds may have gone up or down in the first year. If the bonds lost $100,000 in market value, your return would be a negative 5 percent: R = (50,000 – 100,000)/1,000,000 = −.05. If they gained $100,000, by contrast, your return would be 15 percent: R = (50,000 + 100,000)/1,000,000 = .15. If the bonds gained $100,000 over two years, the total return would be 20 percent because two coupon payments would have been made too: R = (100,000 + 100,000)/1,000,000 = .20.</p>
+    <div class="callout editable block" id="wright-ch04_s06_n02">
+        <h3 class="title">Stop and Think Box</h3>
+        <p class="para" id="wright-ch04_s06_p08">As part of its effort to repay the large debts it accrued during the Revolutionary War, the U.S. federal government in the early 1790s issued three types of bonds: a coupon bond that paid 6 percent per year, a coupon bond that paid 3 percent per year, and a zero coupon bond that became a 6 percent coupon bond in 1801. For most of the 1790s and early 1800s, the price of the 6 percent bonds hovered around par. Given that information, what was the yield to maturity on government debt in that period? What, in general terms, were the prices of the 3 percent and zero coupon bonds?</p>
+        <p class="para" id="wright-ch04_s06_p09">The yield to maturity was about 6 percent because the 6 percent coupon bonds traded at around par. The price of the 3 percent coupon bonds must have been well below par because who would pay $100 to get $3 a year when she could pay $100 and get $6 a year? Finally, the zeroes must have appreciated toward the price of the 6 percent coupon bonds as the conversion date neared.</p>
+    </div>
+    <p class="para editable block" id="wright-ch04_s06_p10"><em class="emphasis">Note that a capital loss or gain is not, repeat not, predicated on actually selling the bond or other asset</em>. One way to think about this is that the rate of return formula merely calculates the return <em class="emphasis">if</em> the bond were to be sold. Another way to think about it is to realize that whether the bond is sold or not, its owner is still poorer (richer) by the amount of the loss (gain) because the value of his assets, and hence his net worth, has shrunk (increased) by that amount. The risk of such loss or gain is known as <span class="margin_term"><a class="glossterm">interest rate risk</a><span class="glossdef">The risk that the market price of a bond or other debt instrument will decrease due to increases in the interest rate.</span></span> to distinguish it from other types of risks, like <span class="margin_term"><a class="glossterm">default risk</a><span class="glossdef">The risk that a bond or other debt instrument will not make the promised payments.</span></span> (the risk of nonpayment). Interest rate risk is higher the longer the maturity of a bond because more FVs are affected by increasing the interest rate, and the most distant ones are the most highly affected. Check this out: The PV of $1,000 in 10 years at 5% compounded annually is 1,000/(1.05)<sup class="superscript">10</sup> = $613.91. At 10% it is 1,000/(1.10)<sup class="superscript">10</sup> = $385.54, a loss of 37.2%. The PV of $1,000 in 30 years at 5% and 10% is 1,000/(1.05)<sup class="superscript">30</sup> = $231.38 and 1,000/(1.10)<sup class="superscript">30</sup> = $57.31, respectively, a loss of 75.23 percent. Duration is a technical measure of interest rate risk that we will not investigate here, where the main point is merely that rising interest rates hurt bond prices (and hence bondholders); falling interest rates help bond prices.</p>
+    <div class="key_takeaways editable block" id="wright-ch04_s06_n03">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="wright-ch04_s06_l02">
+            <li>The rate of return accounts for changes in the market price of a bond or other asset while the yield to maturity does not.</li>
+            <li>Yield to maturity (YTM) is almost always positive but returns are often negative due to interest rate risk, the risk that interest rates will rise, depressing bond prices.</li>
+            <li>When the market interest rate increases, bond prices decrease because the opportunity cost of lending money has increased, making bonds less attractive investments unless their price falls.</li>
+            <li>Algebraically, PV = FV/(1 + i)<sup class="superscript">n</sup>. The interest rate is in the denominator, so as <em class="emphasis">i</em> gets bigger, PV must get smaller.</li>
+            <li>Bonds with longer periods to maturity have more volatile prices, ceteris paribus, because the PV of their distant FV shrinks more, to very small sums.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s07-05-what-s-the-yield-on-that.html"><img src="shared/images/batch-left.png"></a> <a href="s07-05-what-s-the-yield-on-that.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s07-07-inflation-and-interest-rates.html">Next Section</a> <a href="s07-07-inflation-and-interest-rates.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>
